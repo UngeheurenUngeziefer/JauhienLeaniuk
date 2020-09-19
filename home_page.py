@@ -2,15 +2,30 @@ from flask import Flask, url_for, render_template
 app = Flask(__name__)
 
 @app.route('/')
-def home_page(name=None):
-	return render_template('home_page.html', name=name)
+def home(name=None):
+	return render_template('home.html', name=home)
 
-@app.route('/my_projects')
-def hello_world():
-    return 'Here projects!'
+@app.route('/coding')
+def coding():
+    return render_template('coding.html', name=coding)
+
+@app.route('/music')
+def music():
+    return render_template('music.html', name=music)
+
+@app.route('/running')
+def running():
+    return render_template('running.html', name=running)
+
+@app.route('/contacts')
+def contacts():
+    return render_template('contacts.html', name=contacts)
+
 
 with app.test_request_context():
-    url_for('home_page')
-    url_for('hello_world')
+    url_for('home')
+    url_for('coding')
+    url_for('music')
+    url_for('running')
+    url_for('contacts')
     url_for('static', filename='style.css')
-    url_for('static', filename='menu.js')

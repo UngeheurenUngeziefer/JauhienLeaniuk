@@ -1,36 +1,58 @@
-/* Set height of body and the document to 100% to enable "full page tabs" */
-body, html {
-  height: 100%;
+body {
+  background: white;
+}
+
+text {
+  font-size: 18px;
+  font-family: PT Sans;
+  color: black;
+  }
+
+.black_block {
+  background: black;
+  height: 100px;
+  width: 100%;
   margin: 0;
-  font-family: Arial;
+  padding: 0;
 }
 
-/* Style tab links */
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
+.leftimg {
+  float:left; /* Выравнивание по левому краю */
+  margin: 10px 10px 10px 10px; /* Отступы вокруг картинки */  
 }
 
-.tablink:hover {
-  background-color: #777;
+
+/* стили для верхних кнопок, подчёркивание, смена цвета */
+a {
+    color: #da3838;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Chalet NewYorkNineteenEighty;
+    padding: 5px;
+    padding-top: 0px;
+    
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 100px 20px;
-  height: 100%;
+a:hover, a:focus {
+    background-size: 100% 2px;
+    color: #de8181;
 }
 
-#Home {background-color: red;}
-#News {background-color: green;}
-#Contacts {background-color: blue;}
-#About {background-color: orange;}
+/* выравнивание верхних кнопок по ширине экрана */
+ul {
+  align-content: center;
+  text-align: center;
+  width: 200vh;
+}
+
+ul li  {
+  display: inline-block;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
