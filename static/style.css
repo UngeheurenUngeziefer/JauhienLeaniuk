@@ -1,13 +1,16 @@
+/* тело сайта, убраны все отступы */
 body {
-  background: white;
+  margin: 0;
 }
 
+/* класс текста */
 text {
   font-size: 18px;
   font-family: PT Sans;
   color: black;
   }
 
+/* чёрный блок */
 .black_block {
   background: black;
   height: 100px;
@@ -16,11 +19,11 @@ text {
   padding: 0;
 }
 
+/* класс фото */
 .leftimg {
   float:left; /* Выравнивание по левому краю */
   margin: 10px 10px 10px 10px; /* Отступы вокруг картинки */  
 }
-
 
 /* стили для верхних кнопок, подчёркивание, смена цвета */
 a {
@@ -38,21 +41,42 @@ a {
     transition: background-size .3s;
 }
 
+/* появляется полоска подчёркивания и меняется цвет */
 a:hover, a:focus {
     background-size: 100% 2px;
     color: #de8181;
 }
 
 /* выравнивание верхних кнопок по ширине экрана */
-ul {
-  align-content: center;
-  text-align: center;
-  width: 200vh;
+
+div.scrollmenuupper { 
+  overflow: scroll;
+   }
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
 
-ul li  {
+div.scrollmenu {
+  text-align: right;
+  padding-right: 10px;
+  background-color: #333;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+div.scrollmenu a {
   display: inline-block;
   text-align: center;
   padding-left: 30px;
   padding-right: 30px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
 }

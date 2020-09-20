@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width">
     <title>Jauhien.Leaniuk</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
-	    <ul>
-	        <li><a href='{{ url_for("home") }}'>Home</a></li>
-	        <li><a href='{{ url_for("coding") }}'>Coding</a></li>
-	        <li><a href='{{ url_for("music") }}'>Music</a></li>
-	        <li><a href='{{ url_for("running") }}'>Running</a></li>
-	        <li><a href='{{ url_for("contacts") }}'>Contacts</a></li>
-		</ul>
-
+	    <div class='scrollmenuupper'>
+		    <div class="scrollmenu">
+		        <a href='{{ url_for("home") }}'>Home</a>
+		        <a href='{{ url_for("coding") }}'>Coding</a>
+		        <a href='{{ url_for("maps") }}'>Maps</a>
+		        <a href='{{ url_for("running") }}'>Running</a>
+		        <a href='{{ url_for("contacts") }}'>Contacts</a>
+			</div>
+		</div>
+		<div class='black_block'>Bla bla bla</div>
   </head>
-  <body>
-	<div class='black_block'></div>
-  </body>
 </html>
