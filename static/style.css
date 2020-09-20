@@ -10,9 +10,6 @@ text {
   color: black;
   }
 
-img.logo {
-  
-}
 
 /* чёрный блок */
 .black_block {
@@ -25,30 +22,30 @@ img.logo {
 
 /* класс фото */
 .leftimg {
-  float:left; /* Выравнивание по левому краю */
+  float: left; /* Выравнивание по левому краю */
   margin: 10px 10px 10px 10px; /* Отступы вокруг картинки */  
 }
 
 /* стили для верхних кнопок, подчёркивание, смена цвета */
 a {
-    color: #da3838;
-    text-decoration: none;
-    font-size: 25px;
-    font-family: Chalet NewYorkNineteenEighty;
-    padding: 5px;
-    padding-top: 0px;
-    
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
+  color: #da3838;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: Chalet NewYorkNineteenEighty;
+  padding: 5px;
+  padding-top: 0px;
+  
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 5px;
+  transition: background-size .3s;
 }
 
 /* появляется полоска подчёркивания и меняется цвет */
 a:hover, a:focus {
-    background-size: 100% 2px;
-    color: #de8181;
+  background-size: 100% 2px;
+  color: #de8181;
 }
 
 /* ШАПКА */
@@ -63,11 +60,26 @@ div.scrollmenu {
   height: 70px;
 }
 
+img.logo {
+  float: left;
+  /* up right down left */
+  padding: 15px;
+  background-color: #333;
+  width: 140px; /* Ширина рисунка */
+  height: 40px; /*  Высота рисунка */
+  display: inline-block;
+}
+
+/* Путь к файлу с заменяемым рисунком  */
+img.logo:hover {
+  background-position: 0 -40px; /* Смещение фона */
+}
+
 /* прозрачный скроллбар */
 ::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-    background: transparent;
+  width: 0px;
+  height: 0px;
+  background: transparent;
 }
 
 /* настройки для текста кнопок */
@@ -77,7 +89,6 @@ div.scrollmenu a {
   /* up right down left */
   padding: 20px;
   color: white;
-  text-align: center;
   text-decoration: none;
 }
 
