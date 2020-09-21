@@ -28,8 +28,6 @@ img.leftimg {
 
 /* стили для верхних кнопок, подчёркивание, смена цвета */
 a {
-  color: #da3838;
-  text-decoration: none;
   font-size: 25px;
   font-family: Chalet NewYorkNineteenEighty;
   padding: 5px;
@@ -45,7 +43,6 @@ a {
 /* появляется полоска подчёркивания и меняется цвет */
 a:hover, a:focus {
   background-size: 100% 2px;
-  color: #de8181;
 }
 
 /* ШАПКА */
@@ -60,20 +57,20 @@ div.scrollmenu {
   height: 70px;
 }
 
-img.logo {
+/* параметры логотипа */
+div.logo {
   float: left;
-  height: 40px;
-  width: 140px;
   padding: 15px;
+  height: 40px;
+  width: 170px;
+  background-image: url('logo.svg');
   background-color: #333;
+
 }
 
-img.logo:hover {
-  float: left;
-  padding: 15px;
-  background-image: url('logo_2.png'); /* Путь к файлу с заменяемым рисунком  */
-  height: 40px;
-  width: 140px;
+/* логотип при наведении */
+div.logo:hover {
+  background-image: url('logo_2.svg');
 }
 
 /* прозрачный скроллбар */
@@ -81,6 +78,11 @@ img.logo:hover {
   width: 0px;
   height: 0px;
   background: transparent;
+}
+
+/* ссылка в логотипе, отступ */
+a.logolink {
+  padding: 0;
 }
 
 /* настройки для текста кнопок */
@@ -95,5 +97,57 @@ div.scrollmenu a {
 
 /* цвет при наведении на кнопку */
 div.scrollmenu a:hover {
-  background-color: #777;
+  background-color: #676769;
+}
+
+/* меню смены языка */
+.dropdown {
+  float: right;
+  /*position: relative;*/
+  display: inline-block;
+  background-color: #333;
+  padding: 0;  
+  font: 0;
+}
+
+
+/* стили выпадающего меню языка */
+.dropdown-content {
+  padding: 0;
+  display: none;
+  position: absolute;
+  min-width: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+
+p {
+  padding: 0 15px 15px 15px;
+  color: white;
+  background-color: #333;
+  font-size: 25px;
+  font-family: Chalet NewYorkNineteenEighty;
+
+
+  color: white;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 5px;
+  transition: background-size .3s;
+  
+}
+
+p:hover, p:focus {
+  background-size: 100% 2px;
+}
+
+
+
+/* выпадающее меню при наведении */
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #333;
 }
