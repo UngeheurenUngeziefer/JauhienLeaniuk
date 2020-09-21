@@ -21,7 +21,7 @@ text {
 }
 
 /* класс фото */
-.leftimg {
+img.leftimg {
   float: left; /* Выравнивание по левому краю */
   margin: 10px 10px 10px 10px; /* Отступы вокруг картинки */  
 }
@@ -62,17 +62,18 @@ div.scrollmenu {
 
 img.logo {
   float: left;
-  /* up right down left */
+  height: 40px;
+  width: 140px;
   padding: 15px;
   background-color: #333;
-  width: 140px; /* Ширина рисунка */
-  height: 40px; /*  Высота рисунка */
-  display: inline-block;
 }
 
-/* Путь к файлу с заменяемым рисунком  */
 img.logo:hover {
-  background-position: 0 -40px; /* Смещение фона */
+  float: left;
+  padding: 15px;
+  background-image: url('logo_2.png'); /* Путь к файлу с заменяемым рисунком  */
+  height: 40px;
+  width: 140px;
 }
 
 /* прозрачный скроллбар */

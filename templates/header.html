@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Jauhien.Leaniuk</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
-	    	<img src="{{ 'static/logo.png' }}" alt="logo" class='logo'></img>
+	    	<img src='static/{{ "logo.png" }}' alt='logo' class='logo'>
 	    <div class="scrollmenu">
 	        <a href='{{ url_for("home") }}'>Home</a>
 	        <a href='{{ url_for("coding") }}'>Coding</a>
