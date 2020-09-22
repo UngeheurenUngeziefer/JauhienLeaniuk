@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+/* чёрный блок */
+.black_block {
+	background: black;
+	height: 100px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.bb_text {
+	padding-left: 15px;
+	color: #333;
+	font-size: 70pt;
+	font-family: Bebas Neue;
+	font-weight: bold;
+	cursor: default;
+}
+
+.bb_icon {
+	float: right;
+	padding: 15px;
+	height: 70px;
+	width: 70px;
+}

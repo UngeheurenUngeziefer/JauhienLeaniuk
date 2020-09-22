@@ -28,4 +28,4 @@ with app.test_request_context():
     url_for('maps')
     url_for('running')
     url_for('contacts')
-    url_for('static', filename='style.css')
+    url_for('static', filename='home.css')

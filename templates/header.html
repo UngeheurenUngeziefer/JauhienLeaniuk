@@ -4,16 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Jauhien.Leaniuk</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
-	    <a class="logolink" href='{{ url_for("home") }}'><div class='logo'></div></a>
-	    <div class="dropdown">
-		  <button class="dropbtn">EN</button>
-		  <div class="dropdown-content">
-		    <a href="#">RU</a>
-		    <a href="#">BY</a>
-		    <a href="#">UK</a>
-		  </div>
-		</div>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}" />
+	    <a class="logolink" href="{{ url_for('home') }}"><div class='logo'></div></a>
+       	    <div class="dropdown">
+			  <button class="dropbtn">EN</button>
+			  <div class="dropdown-content">
+		    	<a href="#">RU</a>
+		    	<a href="#">BY</a>
+ 		  	  </div>
+			</div>
 	    <div class="scrollmenu">
 	        <a href='{{ url_for("home") }}'>Home</a>
 	        <a href='{{ url_for("coding") }}'>Coding</a>

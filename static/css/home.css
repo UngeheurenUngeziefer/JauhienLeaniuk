@@ -1,0 +1,19 @@
+/* тело сайта, убраны все отступы */
+body {
+  margin: 0;
+}
+
+/* класс текста */
+text.portfolio_text {
+  font-size: 18px;
+  font-family: PT Sans;
+  color: black;
+  margin: 15px 15px 15px 15px; /* Отступы вокруг картинки */  
+  text-align: justify;
+  }
+
+/* класс фото */
+img.leftimg {
+  float: left; /* Выравнивание по левому краю */
+  padding: 15px 15px 15px 15px; /* Отступы вокруг картинки */  
+}
