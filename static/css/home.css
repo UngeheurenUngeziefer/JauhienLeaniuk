@@ -1,19 +1,128 @@
 /* тело сайта, убраны все отступы */
 body {
-  margin: 0;
+	margin: 0;
 }
 
 /* класс текста */
 text.portfolio_text {
-  font-size: 18px;
-  font-family: PT Sans;
-  color: black;
-  margin: 15px 15px 15px 15px; /* Отступы вокруг картинки */  
-  text-align: justify;
+	font-size: 20px;
+	font-family: PT Sans;
+	color: black;
+	text-align: left;
   }
 
 /* класс фото */
 img.leftimg {
-  float: left; /* Выравнивание по левому краю */
-  padding: 15px 15px 15px 15px; /* Отступы вокруг картинки */  
+  	float: left; /* Выравнивание по левому краю */
+  	padding: 0 15px 15px 15px; /* Отступы вокруг картинки */  
+}
+
+text {
+	color: black;
+  	font-family: PT Sans;	
+}
+
+.name_text {
+	font-size: 35px;
+	text-align: justify;
+}
+
+.professions {
+	color: #B94F4F;
+	font-size: 23px;
+	font-weight: normal;
+	padding-right: 15px;
+}
+
+.location {
+	color: #676769;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.github_logo {
+	height: 40px;
+	width: 40px;
+	background-image: url('sm_icons/github_logo.svg');
+}
+
+/* логотип при наведении */
+.github_logo:hover {
+  	background-image: url('sm_icons/github_back.svg');
+}
+
+a.github_link {
+	padding: 0;
+	color: black;
+	width: 40px;
+}
+
+.telegram_logo {
+	height: 40px;
+	width: 40px;
+	background-image: url('sm_icons/telegram_logo.svg');
+}
+
+.telegram_logo:hover {
+  	background-image: url('sm_icons/telegram_back.svg');
+}
+
+a.telegram_link {
+	width: 40px;
+	padding: 0;
+	color: #B94F4F;
+}
+
+.resume_logo {
+	height: 40px;
+	width: 40px;
+	background-image: url('sm_icons/cv_logo.svg');
+}
+
+.resume_logo:hover {
+  	background-image: url('sm_icons/cv_back.svg');
+}
+
+a.resume_link {
+	padding: 0;
+	color: black;
+	width: 40px;
+}
+
+.instagram_logo {
+	height: 40px;
+	width: 40px;
+	background-image: url('sm_icons/instagram_logo.svg');
+}
+
+.instagram_logo:hover {
+  	background-image: url('sm_icons/instagram_back.svg');
+}
+
+a.instagram_link {
+	padding: 0;
+	color: #B94F4F;
+	width: 40px;
+}
+
+.text_block {
+	padding: 20px;
+}
+
+.red_block {
+	float: right;
+	background-color: #B94F4F;
+	height: 500px;
+	width: 100%;
+	padding: 0;
+}
+
+.interactive_svg {
+	width: 470px;
+	height: 470px;
+	padding: 15px;
+}
+
+.thanks_text {
+	color: #676769;
 }

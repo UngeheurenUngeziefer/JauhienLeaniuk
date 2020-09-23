@@ -3,11 +3,33 @@
 <body>
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/black_box.css') }}" />
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}" />
+	<!-- Чёрная полоса -->
 	<div class='black_block'>
 		<div class='bb_text'>Home<img src="static/bb_icons/home_icon.svg" class='bb_icon' /></div>
 	</div>
-	<title>About Me</title>
+	<!-- Фото -->
 	<img src="{{ 'static/photo.jpg' }}" alt="my photo" height=430 width=400 class='leftimg'>
-	<text class='portfolio_text'>Hi there! My name is Jauhien Leaniuk and Im a Python eveloper lalalal 
-	dasldkajsdlaksd asdlaksdjalksdj asdlkjasldkjadThis text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored "Try it Yourself" link.</text>
+	<!-- Имя Заголовок -->
+	<text class='name_text'>Jaŭhien <b>Leaniuk</b></text>
+	<!-- Профессии -->
+	<br />
+	<text class='professions'>Teacher · Entrepreneur · Python Developer · Author</text>
+	<!-- Место -->
+	<br />
+	<text class='location'>Janow, Belarus</text>
+	<!-- Кнопки соц сетей -->
+	<br />
+	<br />
+	<a href='https://t.me/jhnlnk' target='_blank' class='telegram_link'><img class='telegram_logo'></img></a>
+	<a href='https://github.com/UngeheurenUngeziefer' target='_blank' class='github_link'><img class='github_logo'></img></a>
+	<a href='https://www.instagram.com/skona_stadt/' target='_blank' class='instagram_link'><img class='instagram_logo'></img></a>
+	<a href="{{ 'static/resume.pdf' }}" target='_blank' class='resume_link'><img class='resume_logo'></img></a>
+	<!-- Текст портфолио -->
+	<br />
+	<div class='text_block'><text class='portfolio_text'>Hi there! My name is Jauhien Leaniuk. I'm master of geography and junior python developer from Belarus. This is a portfolio-website created to show my skills, and also to present myself as a web-developer, and to show my own projects and hobbies. I have a passion in learning new programming technologies, geography, running, self development and creation new things. I worked as a author, teacher (of geography), freelancer (mostly as a designer and animator) and analyst. As I develop my programming skills I will be sharing all my projects on this site (in coding section). Also this site will contain my other passions: maps that I've created as a geographer and The Dialogue author, my running statistic and my musical preferences.
+	<br /><i class='thanks_text'>Thanks for Your attention!</i></text></div>
+	<!-- Способности + Интерактивный SVG-->
+	<div class='red_block'>
+		<object type="image/svg+xml" data="{{ 'static/dice_visual.svg' }}" class='interactive_svg'></object>
+	</div>
 </body>
