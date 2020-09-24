@@ -14,7 +14,9 @@ text.portfolio_text {
 /* класс фото */
 img.leftimg {
   	float: left; /* Выравнивание по левому краю */
-  	padding: 0 15px 15px 15px; /* Отступы вокруг картинки */  
+  	padding: 0 15px 15px 15px; /* Отступы вокруг картинки */
+  	min-width: 10px;
+  	min-height: 10px;
 }
 
 text {
@@ -32,6 +34,7 @@ text {
 	font-size: 23px;
 	font-weight: normal;
 	padding-right: 15px;
+	text-align: justify;
 }
 
 .location {
@@ -108,9 +111,13 @@ a.instagram_link {
 .text_block {
 	padding: 20px;
 }
+.thanks_text {
+	color: #676769;
+}
 
-.red_block {
-	float: right;
+
+
+.block1 {
 	background-color: #B94F4F;
 	height: 500px;
 	width: 100%;
@@ -118,11 +125,66 @@ a.instagram_link {
 }
 
 .interactive_svg {
-	width: 470px;
+	width: 45%;
 	height: 470px;
-	padding: 15px;
+	float: left;
 }
 
-.thanks_text {
-	color: #676769;
+
+.text_for_svg {
+	float: right;
+	max-width: 40%;
+	max-height: 40%;
+	padding-right: 15px;
+	text-align: right;
+	font-size: 7vw;
+	font-family: Bebas Neue;
+	color: white;
+	cursor: default;
+}
+
+
+.block2 {
+	float: right;
+	background-color: black;
+	height: 500px;
+	width: 100%;
+	padding: 0;
+}
+
+.interactive_svg2 {
+	width: 45%;
+	height: 470px;
+	float: right;
+}
+
+.text_for_svg2 {
+	float: left;
+	max-width: 40%;
+	max-height: 40%;
+	padding-left: 15px;
+	text-align: left;
+	font-size: 7vw;
+	font-family: Bebas Neue;
+	color: #333;
+	cursor: default;
+}
+
+
+.block3 {
+	height: 500px;
+	width: 100%;
+	padding: 0;
+}
+
+.text_for_svg3 {
+	float: right;
+	max-width: 40%;
+	max-height: 40%;
+	padding-right: 15px;
+	text-align: right;
+	font-size: 7vw;
+	font-family: Bebas Neue;
+	color: #333;
+	cursor: default;
 }
