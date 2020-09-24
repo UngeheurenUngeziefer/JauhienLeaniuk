@@ -1,0 +1,30 @@
+.footer_box {
+	margin-top: 15px;
+	background-color: #DFDFDF;
+	width: 100%;
+	padding: 0;
+}
+
+.footer_top_text {
+	text-align: center;
+	font-family: 'PT Sans';
+}
+
+.footer_end_text {
+	text-align: center;
+	font-family: 'PT Sans';
+	padding-bottom: 15px;
+}
+
+.footer_icons {
+	display: block;
+	margin: 0 auto;
+	height: 100px;
+	width: 300px;
+}
+
+.main_icon {
+	height: 35px;
+	width: 35px;
+	padding-bottom: 0;
+}

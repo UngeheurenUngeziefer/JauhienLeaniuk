@@ -1,5 +1,33 @@
 {% include 'header.html' %}
-<body>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/black_box.css') }}" />
   <div class='black_block'><div class='bb_text'>Coding<img src="static/bb_icons/coding_icon.svg" class='bb_icon' /></div></div>
+<head>
+    <title>Marty Alchin</title>
+    <link rel="shortcut icon" href="http://media.martyalchin.com/favicon.png">
+    <link rel="stylesheet" type="text/css" href="http://media.martyalchin.com/style.css">
+    
+
+</head>
+<body>
+
+    <h1>Marty Alchin</h1>
+    <div class="info">Thoughts on <a href="/categories/biwako/">Biwako</a>, <a href="/categories/django/">Django</a>, <a href="/categories/python/">Python</a>, <a href="/categories/books/">books</a>, <a href="/categories/numbers/">numbers</a> and <a rel="me" href="/about/">myself</a></div>
+
+
+
+    <h2><a href="/2011/jan/21/design-decision/">A Tough Design Decision</a></h2>
+    <p class="published">21 Jan 2011</p>
+    <p>When I set out to work on <a href="https://github.com/gulopine/biwako">Biwako</a>, I expected to have to make some hard choices, but I didn&#8217;t expect to hit one so quickly. What started as a simple feature turned out to take several days of research, trial and error before finally settling on a solution that I didn&#8217;t see coming. And in the spirit of building this framework out in the open, I&#8217;d like to spend some time sharing my experiences, in hopes of helping someone else who might face a similar problem&nbsp;someday.</p>
+
+    <h2><a href="/2011/jan/20/class-level-keyword-arguments/">Class-level Keyword Arguments</a></h2>
+    <p class="published">20 Jan 2011</p>
+    <p>Python sports some <a href="http://martyalchin.com/2007/nov/22/dynamic-functions/">nifty features</a> when it comes to handling arguments, but those are only for functions. A class declaration is limited to just a list of base classes &#8230; or is&nbsp;it?</p>
+
+    <h2><a href="/2011/jan/20/biwako/">Biwako: File Formats Made Easy</a></h2>
+    <p class="published">20 Jan 2011</p>
+    <p>For years now, I&#8217;ve been researching various kinds of file formats, from music and images to video games and even <span class="caps">NASCAR</span> data streams. Each format is usually considered to be unique&#8212;at least as far as parsing/saving implementations go, but the truth is that they have a lot in common. And anytime you have a bunch of independent tasks that share similar aspects, you have an ideal environment for the creation of a framework to make those common aspects easier to&nbsp;manage.</p>
+
+
+<div class="copyright info vcard">&copy;&nbsp;<a href="/2007/">2007</a>, <a href="/2008/">2008</a>, <a href="/2009/">2009</a>, <a href="/2010/">2010</a>, <a href="/2011/">2011</a> <img class="g photo" alt="" src="http://media.martyalchin.com/g.png" width="24" height="24"> <a class="fn url" href="/">Marty Alchin</a>, <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/">some rights reserved</a>.</div>
+
 </body>
