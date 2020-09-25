@@ -59,28 +59,29 @@ custom_style = Style(
 # pie_chart.render_to_file('my_projects_stats2.svg')
 
 
-treemap = pygal.Treemap(fill=True, interpolate='cubic', style=custom_style)
-treemap.add('Games', [{'value': 4, 'label': 'PyGame'},
-					   {'value': 3, 'label': 'PyXel'}])
-treemap.add('GUI', [{'value': 3, 'label': 'Tkinter'}])
-treemap.add('Web', [{'value': 3, 'label': 'HTML'}, {'value': 3, 'label': 'CSS'},
-					 {'value': 2, 'label': 'Requests'},
-					 {'value': 1, 'label': 'Django'},
-					 {'value': 1, 'label': 'Flask'},
-					 {'value': 1, 'label': 'JavaScript'}])
-treemap.add('Data Visualisation', [{'value': 3, 'label': 'PIL'},
-					   				{'value': 2, 'label': 'MatPlotLib'},
-									{'value': 2, 'label': 'PyGal'},
-					   				{'value': 1, 'label': 'Seaborn'},
-									{'value': 1, 'label': 'PyWaffle'}])
-treemap.add('Telegram Bot', [{'value': 2, 'label': 'Telepot'},
-					   		  {'value': 1, 'label': 'Python-Telegram-Bot'}])
-treemap.add('Data Analytics', [{'value': 2, 'label': 'Pandas'}])
-treemap.add('Data Bases', [{'value': 2, 'label': 'SQL'}])
-treemap.add('Web Scraping', [{'value': 2, 'label': 'lxml'}])
-treemap.add('Math', [{'value': 1, 'label': 'NumPy'}])
-treemap.add('Web Scraping', [{'value': 1, 'label': 'Beautiful Soap'}])
-treemap.render_to_file('my_projects_stats3.svg')
+# treemap = pygal.Treemap(fill=True, interpolate='cubic', style=custom_style)
+# treemap.add('Data Analytics', [{'value': 2, 'label': 'Pandas'}])
+# treemap.add('Data Bases', [{'value': 2, 'label': 'SQL'}])
+# treemap.add('Data Visualisation', [{'value': 3, 'label': 'PIL'},
+# 					   				{'value': 2, 'label': 'MatPlotLib'},
+# 									{'value': 2, 'label': 'PyGal'},
+# 					   				{'value': 1, 'label': 'Seaborn'},
+# 									{'value': 1, 'label': 'PyWaffle'}])
+# treemap.add('Games', [{'value': 4, 'label': 'PyGame'},
+# 					   {'value': 3, 'label': 'PyXel'}])
+# treemap.add('GUI', [{'value': 3, 'label': 'Tkinter'}])
+# treemap.add('Math', [{'value': 1, 'label': 'NumPy'}])
+# treemap.add('Telegram Bot', [{'value': 2, 'label': 'Telepot'},
+# 					   		  {'value': 1, 'label': 'Python-Telegram-Bot'}])
+# treemap.add('Web', [{'value': 3, 'label': 'HTML'}, {'value': 3, 'label': 'CSS'},
+# 					 {'value': 2, 'label': 'Requests'},
+# 					 {'value': 1, 'label': 'Django'},
+# 					 {'value': 1, 'label': 'Flask'},
+# 					 {'value': 1, 'label': 'JavaScript'}])
+# treemap.add('Web Scraping', [{'value': 2, 'label': 'lxml'},
+# 							{'value': 1, 'label': 'Beautiful Soap'}])
+
+# treemap.render_to_file('my_projects_stats3.svg')
 
 # line_chart = pygal.HorizontalBar(font_size=50, font_family='PT Sans', fill=True, interpolate='cubic', style=custom_style)
 # line_chart.add('Adobe Photoshop', 85)
@@ -92,3 +93,17 @@ treemap.render_to_file('my_projects_stats3.svg')
 # line_chart.add('Flask', 65)
 # line_chart.add('Django', 55)
 # line_chart.render_to_file('my_skills.svg')
+
+
+gauge = pygal.SolidGauge(inner_radius=0.70)
+percent_formatter = lambda x: '{:.10g}%'.format(x)
+dollar_formatter = lambda x: '{:.10g}$'.format(x)
+gauge.value_formatter = percent_formatter
+
+gauge.add('Series 1', [{'value': 225000, 'max_value': 1275000}],
+          formatter=dollar_formatter)
+gauge.add('Series 2', [{'value': 110, 'max_value': 100}])
+gauge.add('Series 3', [{'value': 3}])
+gauge.add('Series 3', [{'value': 3}])
+
+gauge.render_to_file('percents.svg')

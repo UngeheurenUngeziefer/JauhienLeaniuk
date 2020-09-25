@@ -3,18 +3,38 @@ body {
 	margin: 0;
 }
 
+.white_block {
+	float: right;
+	background-color: white;
+	background-origin: content-box;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/*background-color: #B94F4F;*/
+	height: 75vh;
+	width: 100vw;
+	padding: 0;
+}
+
 /* класс текста */
 text.portfolio_text {
-	font-size: 20px;
 	font-family: PT Sans;
 	color: black;
 	text-align: left;
+	max-width: 40%;
+	max-height: 40%;
+	padding-right: 15px;
+	font-size: 1.5vw;
+	cursor: default;
   }
 
 /* класс фото */
 img.leftimg {
   	float: left; /* Выравнивание по левому краю */
   	padding: 0 15px 15px 15px; /* Отступы вокруг картинки */
+  	width: 33vw;
+	object-fit: cover;
+	display: block;
+	
 }
 
 text {
@@ -23,25 +43,27 @@ text {
 }
 
 .name_text {
-	font-size: 35px;
+	font-size: 3vw;
 	text-align: justify;
+	cursor: default;
 }
 
 .professions {
 	color: #B94F4F;
-	font-size: 23px;
+	font-size: 2.5vw;
 	font-weight: normal;
-	padding-right: 15px;
 	text-align: justify;
+	cursor: default;
 }
 
 .location {
 	color: #676769;
-	font-size: 20px;
+	font-size: 2vw;
 	font-style: italic;
 }
 
 .github_logo {
+	box-sizing: border-box;
 	height: 40px;
 	width: 40px;
 	background-image: url('sm_icons/github_logo.svg');
@@ -59,6 +81,7 @@ a.github_link {
 }
 
 .telegram_logo {
+	box-sizing: border-box;
 	height: 40px;
 	width: 40px;
 	background-image: url('sm_icons/telegram_logo.svg');
@@ -69,12 +92,13 @@ a.github_link {
 }
 
 a.telegram_link {
-	width: 40px;
 	padding: 0;
+	width: 40px;
 	color: #B94F4F;
 }
 
 .resume_logo {
+	box-sizing: border-box;
 	height: 40px;
 	width: 40px;
 	background-image: url('sm_icons/cv_logo.svg');
@@ -91,6 +115,7 @@ a.resume_link {
 }
 
 .instagram_logo {
+	box-sizing: border-box;
 	height: 40px;
 	width: 40px;
 	background-image: url('sm_icons/instagram_logo.svg');
@@ -107,27 +132,35 @@ a.instagram_link {
 }
 
 .text_block {
-	padding: 20px;
+	float: left; /* Выравнивание по левому краю */
+  	padding: 0 15px 15px 0; /* Отступы вокруг картинки */
+  	width: 60vw;
+	height: 70vh;
+	display: block;
 }
+
 .thanks_text {
 	color: #676769;
 }
 
-
-
+/* Красный блок, фоновая картинка розы */
 .block1 {
-	background-color: #B94F4F;
-	height: 80vh;
-	width: 100vw;
+	float: right;
+	background-image: url('/static/home/roses_back.png');
+	background-origin: content-box;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/*background-color: #B94F4F;*/
+	height: 80%;
+	width: 100%;
 	padding: 0;
 }
 
 .interactive_svg {
-	width: 50vw;
-	height: 70vh;
+	padding-top: 0;
+	width: 40%;
 	float: left;
 }
-
 
 .text_for_svg {
 	float: right;
@@ -141,19 +174,22 @@ a.instagram_link {
 	cursor: default;
 }
 
-
 .block2 {
 	float: right;
-	background-color: black;
-	height: 80vh;
-	width: 100vw;
+	background-image: url('/static/home/fog_back.png');
+	background-origin: content-box;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/*background-color: #B94F4F;*/
+	height: 80%;
+	width: 100%;
 	padding: 0;
 }
 
 .interactive_svg2 {
-	width: 50vw;
-	height: 70vh;
+	padding-top: 0;
 	float: right;
+	width: 40%;
 }
 
 .text_for_svg2 {
@@ -168,21 +204,10 @@ a.instagram_link {
 	cursor: default;
 }
 
-
-.block3 {
-	height: 80vh;
-	width: 100vw;
-	padding: 0;
-}
-
-.text_for_svg3 {
+.footer {
 	float: right;
-	max-width: 40%;
-	max-height: 40%;
-	padding-right: 15px;
-	text-align: right;
-	font-size: 7vw;
-	font-family: Bebas Neue;
-	color: #333;
-	cursor: default;
+	background-color: #DFDFDF;
+	height: 32vh;
+	width: 100vw;
+	margin: 0;
 }

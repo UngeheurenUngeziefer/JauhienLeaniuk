@@ -1,13 +1,12 @@
-<footer>
-	<!-- Файл стилей -->
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}" />
-	<!-- Файл стилей -->
-	<div class=footer_box>
-		<div class='footer_top_text'>Site created using this tech's and products:</div>
-		<img src="{{ 'static/footer/footer_icons.svg' }}" class='footer_icons'></img>
-		<div class='footer_end_text'>
-			© 2020	Jaŭhien Leaniuk, <img src="{{ 'static/css/logo/main_icon.svg' }}" class='main_icon'></img> some rights reserved.
-		</div>
+<!-- Файл стилей -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}" />
+<div class=footer_box>
+	<div class='footer_text'>
+		<div class='footer_text_top'>Site created using this tech's and products:</div>
 	</div>
-</footer>
-
+	<img src="{{ 'static/footer/footer_icons.svg' }}" class='footer_icons'></img>
+	<div class='footer_text'>© 2020	Jaŭhien Leaniuk, 
+		<img src="{{ 'static/css/logo/main_icon.svg' }}" class='main_icon'></img>
+		 some rights reserved.
+	</div>
+</div>
