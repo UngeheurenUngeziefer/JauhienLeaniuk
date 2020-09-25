@@ -1,0 +1,48 @@
+/* Главное название */
+#title_projects {
+	font-size: 5vw;
+	font-family: 'Bebas Neue';
+	text-align: center;
+}
+
+
+.project_block {
+	font-family: 'PT Sans'
+}
+
+/* Название проекта слева */
+.project_name {
+  width: 15%;
+  float: left;
+  text-align: right;
+  font-size: 120%;
+}
+
+/* Описание проекта по центру */
+.project_description {
+  width: 70%;
+  float: left;
+  text-align: justify;
+  vertical-align: middle;
+}
+
+/* Текст проекта по ширине внутри блока */
+.project_text {
+  margin: 0;
+  text-align: justify;
+}
+
+/* Дата окончания проекта справа */
+.date {
+  width: 15%;
+  float: right;
+  text-align: left;
+  font-size: 120%;
+}
+
+.project_name, .project_description, .date {
+    -webkit-box-sizing: border-box;  
+    -moz-box-sizing: border-box;  
+    box-sizing: border-box;   
+}
+

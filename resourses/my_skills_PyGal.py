@@ -2,8 +2,8 @@ import pygal
 import pandas as pd
 from pygal.style import Style
 
-table = pd.read_csv('projects.csv')
-table = table.sort_values(by=['Number of projects'], ascending=False)
+# table = pd.read_csv('projects.csv')
+# table = table.sort_values(by=['Number of projects'], ascending=False)
 
 
 # print(table)
@@ -15,19 +15,19 @@ table = table.sort_values(by=['Number of projects'], ascending=False)
 
 
 
-custom_style = Style(
-	label_font_size=25,
-	major_label_font_size=25,
-	value_font_size=25,
-	legend_font_size=25,
-	background='#B94F4F',
-	plot_background='#d4d4d4',
-	foreground='white',
-	foreground_strong='black',
-	foreground_subtle='black',
-	opacity='.6',
-	opacity_hover='.9',
-	transition='400ms ease-in',)
+# custom_style = Style(
+# 	label_font_size=25,
+# 	major_label_font_size=25,
+# 	value_font_size=25,
+# 	legend_font_size=25,
+# 	background='#B94F4F',
+# 	plot_background='#d4d4d4',
+# 	foreground='white',
+# 	foreground_strong='black',
+# 	foreground_subtle='black',
+# 	opacity='.6',
+# 	opacity_hover='.9',
+# 	transition='400ms ease-in',)
 	# colors=('#a65353', '#a68653', '#9fa653', '#68a653', '#53a68d', '#5393a6', '#535ba6', '#9753a6', '#a65386', '#a65366'))
 
 
@@ -95,15 +95,39 @@ custom_style = Style(
 # line_chart.render_to_file('my_skills.svg')
 
 
-gauge = pygal.SolidGauge(inner_radius=0.70)
-percent_formatter = lambda x: '{:.10g}%'.format(x)
-dollar_formatter = lambda x: '{:.10g}$'.format(x)
+custom_style = Style(
+	label_font_size=25,
+	major_label_font_size=25,
+	value_font_size=25,
+	legend_font_size=25,
+	background='#001b5b',
+	plot_background='white',
+	foreground='white',
+	foreground_strong='black',
+	foreground_subtle='black',
+	opacity='.6',
+	opacity_hover='.9',
+	transition='400ms ease-in',)
+	# colors=('#a65353', '#a68653', '#9fa653', '#68a653', '#53a68d', '#5393a6', '#535ba6', '#9753a6', '#a65386', '#a65366'))
+#001b5b
+
+gauge = pygal.SolidGauge(inner_radius=0.70, style=custom_style)
+percent_formatter = lambda x: '{:.10g} %'.format(x)
+
+time_formatter = lambda x: '{:.10g} years'.format(x)
 gauge.value_formatter = percent_formatter
 
-gauge.add('Series 1', [{'value': 225000, 'max_value': 1275000}],
-          formatter=dollar_formatter)
-gauge.add('Series 2', [{'value': 110, 'max_value': 100}])
-gauge.add('Series 3', [{'value': 3}])
-gauge.add('Series 3', [{'value': 3}])
+gauge.add('Analyst', [{'value': 2, 'max_value': 4}],
+          formatter=time_formatter)
+gauge.add('Author', [{'value': 4, 'max_value': 10}],
+          formatter=time_formatter)
+gauge.add('Bachelor of Geography', [{'value': 4, 'max_value': 4}],
+          formatter=time_formatter)
+gauge.add('Cartographer', [{'value': 4, 'max_value': 8}],
+          formatter=time_formatter)
+gauge.add('Master of Geography', [{'value': 2, 'max_value': 2}],
+          formatter=time_formatter)
+gauge.add('Python Developer', [{'value': 1, 'max_value': 6}],
+          formatter=time_formatter)
 
 gauge.render_to_file('percents.svg')
