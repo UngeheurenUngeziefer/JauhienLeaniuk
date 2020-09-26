@@ -6,7 +6,11 @@
 }
 
 .footer_text_top {
-	padding-top: 1.5vh;
+	padding-top: 2vh;
+}
+
+.footer_text_bottom {
+	padding-bottom: 2vh;	
 }
 
 .footer_icons {

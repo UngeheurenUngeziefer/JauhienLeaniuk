@@ -22,8 +22,9 @@ text.portfolio_text {
 	text-align: left;
 	max-width: 40%;
 	max-height: 40%;
-	padding: 15px 0 15px 15px;
-	font-size: 1.5vw;
+	padding: 15px 0 15px 0;
+	margin-right: 5%;
+	font-size: 100%;
 	cursor: default;
   }
 
@@ -43,14 +44,14 @@ text {
 }
 
 .name_text {
-	font-size: 3vw;
+	font-size: 2.5vw;
 	text-align: justify;
 	cursor: default;
 }
 
 .professions {
 	color: #B94F4F;
-	font-size: 2.5vw;
+	font-size: 2vw;
 	font-weight: normal;
 	text-align: justify;
 	cursor: default;
@@ -58,7 +59,7 @@ text {
 
 .location {
 	color: #676769;
-	font-size: 2vw;
+	font-size: 1.5vw;
 	font-style: italic;
 }
 
@@ -78,6 +79,7 @@ a.github_link {
 	padding: 0;
 	color: black;
 	width: 40px;
+  	padding: 5px;
 }
 
 .telegram_logo {
@@ -95,6 +97,7 @@ a.telegram_link {
 	padding: 0;
 	width: 40px;
 	color: #B94F4F;
+	padding: 5px;
 }
 
 .resume_logo {
@@ -112,6 +115,7 @@ a.resume_link {
 	padding: 0;
 	color: black;
 	width: 40px;
+	padding: 5px;
 }
 
 .instagram_logo {
@@ -129,6 +133,7 @@ a.instagram_link {
 	padding: 0;
 	color: #B94F4F;
 	width: 40px;
+	padding: 5px;
 }
 
 .thanks_text {
@@ -227,5 +232,5 @@ a.instagram_link {
 	background-size: 100%;
 	height: 60%;
 	width: 100%;
-	padding: 0 0 2% 0;
+	padding: 0;
 }

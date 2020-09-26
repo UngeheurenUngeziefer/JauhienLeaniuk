@@ -12,7 +12,7 @@ head {
 }
 
 /* стили для верхних кнопок, подчёркивание, смена цвета */
-a {
+a.header_link {
   font-size: 25px;
   font-family: Chalet NewYorkNineteenEighty;
   padding: 5px;
@@ -26,7 +26,7 @@ a {
 }
 
 /* появляется полоска подчёркивания и меняется цвет */
-a:hover, a:focus {
+a.header_link:hover, a.header_link:focus {
   background-size: 100% 2px;
 }
 

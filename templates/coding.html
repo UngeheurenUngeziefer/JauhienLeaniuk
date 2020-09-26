@@ -1,5 +1,8 @@
 {% include 'header.html' %}
 <body>
+    <!-- Масштабирование по ширине экрана -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Подгрузка стилей -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/black_box.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/coding.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}" />
@@ -7,11 +10,137 @@
     <div class='black_block'>
         <div class='bb_text'>Coding<img src="static/bb_icons/coding_icon.svg" class='bb_icon' /></div>
     </div>
+    <!-- Блок проекта -->
     <div class='project_block'>
-        <div id='title_projects'>My projects</div>
-        <div class='project_name'>Belarus State Belarus State</div><div class='project_description'>In the aftermath of the 1917 Russian Revolution, different states arose competing for legitimacy amidst the Civil War, ultimately ending in the rise of the Byelorussian Soviet Socialist Republic (Byelorussian SSR) which became a founding constituent republic of the Soviet Union in 1922. Belarus lost almost half of its territory to Poland after the Polish–Soviet War (1919–1921). Much of the borders of Belarus took their modern shape in 1939, when some lands of the Second Polish Republic were reintegrated into it after the Soviet invasion of Poland, and were finalized after World War II.[14][15][16] During WWII, military operations devastated Belarus, which lost about a quarter of its population and half of its economic resources.[17] The republic was redeveloped in the post-war years. In 1945, the Byelorussian SSR became a founding member of the United Nations, along with the Soviet Union and the Ukrainian SSR.[18] The parliament of the republic proclaimed the sovereignty of Belarus on 27 July 1990, and during the dissolution of the Soviet Union, Belarus declared independence on 25 August 1991.[19] In 2000, Belarus and Russia signed a treaty for greater cooperation, forming the Union State.<img src="{{ 'static/home/photo.png' }}"></div><div class='date'>16 july 1994</div>
+        <!-- Заголовок -->
+    <div id='title_projects'>My projects</div>
+    <!-- Jauhien Leaniuk -->
+    <div class='project_block'>
+        <div class='project_name'>
+            <a class='coding_link' target='_blank' href='https://github.com/UngeheurenUngeziefer/JauhienLeaniuk'>Jauhien Leaniuk</a>
+        </div>
+        <!-- Описание проекта -->
+        <div class='project_description'>Web development is something very popular in tech sphere, so I choose create this site portfolio using Sublime Text, Flask, HTML, CSS, Jinja, PyGal, Pandas, Numpy, Adobe Photoshop and Illustrator.</div>
+        <div class='date'>15 sep 2020</div>
+        <div class='horizontal_space'></div>
     </div>
-
+    <!-- Alien Invasion -->
+    <div class='project_block'>
+        <div class='project_name'>
+            <a class='coding_link' target='_blank' href='https://github.com/UngeheurenUngeziefer/Python_Games/tree/master/PyGame/Alien_Invasion'>Alien Invasion</a>
+        </div>
+        <div class='project_description'>I choose to read the book <a class='coding_link' target='_blank' href='https://nostarch.com/pythoncrashcourse2e'>Python Crash Course</a> by Eric Matthes, so one of the proposed projects in this book is "Alien Invasion" project, so there I'm finished it. With few self improvements like two guns instead of one and others.</div>
+        <div class='date'>15 sep 2020</div>
+        <div class='horizontal_space'></div>
+    </div>
+    <!-- Pyxel Rain -->
+    <div class='project_block'>
+        <div class='project_name'>
+            <a class='coding_link' target='_blank' href='https://github.com/UngeheurenUngeziefer/Python_Games/tree/master/PyXel/Pyxel_Rain'>Pyxel Rain</a>
+        </div>
+        <div class='project_description'>This game is written very fast, but there is no some hard logic or many lines of code. The main goal to avoid bad drops and collect good. So this time I try to create more pure graphics and background changes every level.</div>
+        <div class='date'>29 jul 2020</div>
+        <div class='horizontal_space'></div>
+    </div>
+    <!-- Road Rush -->
+    <div class='project_block'>
+        <div class='project_name'>
+            <a class='coding_link' target='_blank' href='https://github.com/UngeheurenUngeziefer/Python_Games/tree/master/PyXel/Road_Rush'>Road Rush</a>
+        </div>
+        <div class='project_description'>One of my favorite games from NES is Road Fighter. So I choose to make my version of this game using PyXel engine. I making this one little bit long, cause I'm carried away and create 3 lvl's, few final screens, few enemies and so on. But I think the project is great :)</div>
+        <div class='date'>12 jul 2020</div>
+        <div class='horizontal_space'></div>
+    </div>
+    <!-- Snake -->
+    <div class='project_block'>
+        <div class='project_name'>
+            <a class='coding_link' target='_blank' href='https://github.com/UngeheurenUngeziefer/Python_Games/tree/master/Tkinter/Snake'>Snake</a>
+        </div>
+        <div class='project_description'>I think that except calculator, every programmer should know how to programm snake game. So I do the snake using Tkinter.</div>
+        <div class='date'>5 jul 2020</div>
+        <div class='horizontal_space'></div>
+    </div>
+    <!-- Square Run -->
+    <div class='project_block'>
+        <div class='project_name'>
+            <a class='coding_link' target='_blank' href='https://github.com/UngeheurenUngeziefer/Python_Games/tree/master/PyXel/Square_Run'>Square Run</a>
+        </div>
+        <div class='project_description'>Here I'm learn PyXel framework, which created to make games with pyxel-bit graphics. My first game used this engine is based on one of game examples in framework files, and the main goal of the game is to avoid the bullets and collect geometric shapes.</div>
+        <div class='date'>3 jul 2020</div>
+        <div class='horizontal_space'></div>
+    </div>
+    <!-- The Dialogue Bot -->
+    <div class='project_block'>
+        <div class='project_name'>
+            <a class='coding_link' target='_blank' href='https://github.com/UngeheurenUngeziefer/Telegram_bots'>The Dialogue Bot</a>
+        </div>
+        <div class='project_description'>Some time later I write a <a target='_blank' class='coding_link' href='https://telegram.me/The_Dialogue_bot'>test bot</a> who send a random article link on choosen language from another my project "The Dialogue".</div>
+        <div class='date'>24 jun 2020</div>
+        <div class='horizontal_space'></div>
+    </div>
+    <!-- Image Poster -->
+    <div class='project_block'>
+        <div class='project_name'>
+            <a class='coding_link' target='_blank' href='https://github.com/UngeheurenUngeziefer/Pepe_project'>Image Poster</a>
+        </div>
+        <div class='project_description'>Telegram is growing fast last years, so I'm interested in creation Telegram bots on Python. First of all I make web-scraper for downloading images from site <a target='_blank' class='coding_link' href='https://rare-pepe.com/'>rare-pepe.com</a> and then create bot who post images to the <a target='_blank' class='coding_link' href='https://t.me/pepe_full_collection'>telegram channel</a> as a administrator. You need to show bot link to the channel, give bot admin rights and send address of directory when images lay. So there I notice about telegram restriction for 3 sec time of posting, and make a correction.</div>
+        <div class='date'>23 jun 2020</div>
+        <div class='horizontal_space'></div>
+    </div>
+    <!-- Exoplanets -->
+    <div class='project_block'>
+        <div class='project_name'>
+            <a class='coding_link' target='_blank' href='https://github.com/UngeheurenUngeziefer/Exoplanets_Data_Analytics'>Exoplanets</a>
+        </div>
+        <div class='project_description'>My first project in Data Analytics. I analyse <a target='_blank' class='coding_link' href='http://exoplanet.eu/'>exoplanets.eu</a> website and calculate many astronomic parameters and build graphics based on this calculations. Not all of my graphics look's very nice, but here I'm studied how to work with Pandas, Matplotlib, Numpy and little bit of PyWaffle, Scipy, Seaborn, Itertools. So there I first used classes and working with them.</div>
+        <div class='date'>18 jun 2020</div>
+        <div class='horizontal_space'></div>
+    </div>
+    <!-- Calculator GUI -->
+    <div class='project_block'>
+        <div class='project_name'>
+            <a class='coding_link' target='_blank' href='https://github.com/UngeheurenUngeziefer/Calculator_GUI'>Calculator GUI</a>
+        </div>
+        <div class='project_description'>I read somewhere that every programmer should be able to write their own calculator, and I also wanted to try to make progress in creating a graphical interface, so the calculator via print in the console was a completed stage.</div>
+        <div class='date'>29 may 2020</div>
+        <div class='horizontal_space'></div>
+    </div>
+    <!-- Web Site -->
+    <div class='project_block'>
+        <div class='project_name'>
+            <a class='coding_link' target='_blank' href='https://github.com/UngeheurenUngeziefer/Webim'>First Web Site</a>
+        </div>
+        <div class='project_description'>This time I trying to create my first website with Django, HTML, CSS, JS. I made little sidebar with Javascript, and create two pages to show my skills.</div>
+        <div class='date'>3 may 2020</div>
+        <div class='horizontal_space'></div>
+    </div>
+    <!-- Tic Tac Toe -->
+    <div class='project_block'>
+        <div class='project_name'>
+            <a class='coding_link' target='_blank' href='https://github.com/UngeheurenUngeziefer/Tiny_programms'>Tic Tac Toe</a>
+        </div>
+        <div class='project_description'>My first interesting project finished after "<a target='_blank' href='https://www.coursera.org/learn/python-osnovy-programmirovaniya' class='coding_link'>Coursera Python Basics</a>" course completed. Game based on simple if-else logic and working from console there is no GUI, but it's a first finished project writed fully by myself!</div>
+        <div class='date'>11 jan 2020</div>
+        <div class='horizontal_space'></div>
+    </div>
+    <!-- Snow screensaver -->
+    <div class='project_block'>
+        <div class='project_name'>
+            <a class='coding_link' target='_blank' href='https://github.com/UngeheurenUngeziefer/Python_Games/tree/master/PyGame/Snowfall'>Snow Screesaver</a>
+        </div>
+        <div class='project_description'>Little screensaver programm created with PyGame.</div>
+        <div class='date'>10 dec 2019</div>
+        <div class='horizontal_space'></div>
+    </div>
+    <!-- Image Movers -->
+    <div class='project_block'>
+        <div class='project_name'>
+            <a class='coding_link' target='_blank' href='https://github.com/UngeheurenUngeziefer/Python_Games/tree/master/PyGame/Move_Image'>Image Movers</a>
+        </div>
+        <div class='project_description'>Just some experiments with PyGame framework. There is few simple image movers by arrows and other controls.</div>
+        <div class='date'>17 nov 2019</div>
+        <div class='horizontal_space'></div>
+    </div>
     <div class='footer'>
         {% include 'footer.html' %}
     </div>
