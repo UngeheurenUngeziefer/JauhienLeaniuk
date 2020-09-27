@@ -29,7 +29,7 @@ text.portfolio_text {
   }
 
 /* класс фото */
-img.leftimg {
+.leftimg {
   	float: left; /* Выравнивание по левому краю */
   	padding: 0 15px 15px 15px; /* Отступы вокруг картинки */
   	width: 33vw;
@@ -97,7 +97,7 @@ a.telegram_link {
 	padding: 0;
 	width: 40px;
 	color: #B94F4F;
-	padding: 5px;
+	padding: 5px 5px 5px 0;
 }
 
 .resume_logo {
@@ -224,13 +224,4 @@ a.instagram_link {
 	cursor: default;
 }
 
-.footer {
-	float: right;
-	background-image: url('/static/home/forest_back.png');
-	background-origin: content-box;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 60%;
-	width: 100%;
-	padding: 0;
-}
+

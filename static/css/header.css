@@ -50,7 +50,7 @@ div.logo {
   width: 170px;
   background-image: url('logo/logo.svg');
   background-color: #333;
-
+  box-sizing: content-box;
 }
 
 /* логотип при наведении */
