@@ -111,23 +111,24 @@ custom_style = Style(
 	# colors=('#a65353', '#a68653', '#9fa653', '#68a653', '#53a68d', '#5393a6', '#535ba6', '#9753a6', '#a65386', '#a65366'))
 #001b5b
 
-gauge = pygal.SolidGauge(inner_radius=0.70, style=custom_style)
-percent_formatter = lambda x: '{:.10g} %'.format(x)
+# gauge = pygal.SolidGauge(inner_radius=0.70, style=custom_style)
+# percent_formatter = lambda x: '{:.10g} %'.format(x)
 
-time_formatter = lambda x: '{:.10g} years'.format(x)
-gauge.value_formatter = percent_formatter
+# time_formatter = lambda x: '{:.10g} years'.format(x)
+# gauge.value_formatter = percent_formatter
 
-gauge.add('Analyst', [{'value': 2, 'max_value': 4}],
-          formatter=time_formatter)
-gauge.add('Author', [{'value': 4, 'max_value': 10}],
-          formatter=time_formatter)
-gauge.add('Bachelor of Geography', [{'value': 4, 'max_value': 4}],
-          formatter=time_formatter)
-gauge.add('Cartographer', [{'value': 4, 'max_value': 8}],
-          formatter=time_formatter)
-gauge.add('Master of Geography', [{'value': 2, 'max_value': 2}],
-          formatter=time_formatter)
-gauge.add('Python Developer', [{'value': 1, 'max_value': 6}],
-          formatter=time_formatter)
+# gauge.add('Analyst', [{'value': 2, 'max_value': 4}],
+#           formatter=time_formatter)
+# gauge.add('Author', [{'value': 4, 'max_value': 10}],
+#           formatter=time_formatter)
+# gauge.add('Bachelor of Geography', [{'value': 4, 'max_value': 4}],
+#           formatter=time_formatter)
+# gauge.add('Cartographer', [{'value': 4, 'max_value': 8}],
+#           formatter=time_formatter)
+# gauge.add('Master of Geography', [{'value': 2, 'max_value': 2}],
+#           formatter=time_formatter)
+# gauge.add('Python Developer', [{'value': 1, 'max_value': 6}],
+#           formatter=time_formatter)
 
-gauge.render_to_file('percents.svg')
+# gauge.render_to_file('percents.svg')
+
