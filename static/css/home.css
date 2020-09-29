@@ -3,17 +3,6 @@ body {
 	margin: 0;
 }
 
-.white_block {
-	float: right;
-	background-color: white;
-	background-origin: content-box;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	/*background-color: #B94F4F;*/
-	height: 60%;
-	width: 100%;
-	padding: 0;
-}
 
 /* класс текста */
 text.portfolio_text {
@@ -22,8 +11,7 @@ text.portfolio_text {
 	text-align: left;
 	max-width: 40%;
 	max-height: 40%;
-	padding: 15px 0 15px 0;
-	margin-right: 5%;
+	padding: 0;
 	font-size: 100%;
 	cursor: default;
   }
@@ -31,10 +19,12 @@ text.portfolio_text {
 /* класс фото */
 .leftimg {
   	float: left; /* Выравнивание по левому краю */
-  	padding: 0 15px 15px 15px; /* Отступы вокруг картинки */
-  	width: 33vw;
-	object-fit: cover;
-	display: block;
+  	padding: 0 15px 0 0; /* Отступы вокруг картинки */
+  	max-width: 35%;
+  	width: auto;
+  	height: auto;
+/*	object-fit: cover;
+	display: block;*/
 	
 }
 
@@ -44,14 +34,14 @@ text {
 }
 
 .name_text {
-	font-size: 2.5vw;
+	font-size: 120%;
 	text-align: justify;
 	cursor: default;
 }
 
 .professions {
 	color: #B94F4F;
-	font-size: 2vw;
+	font-size: 100%;
 	font-weight: normal;
 	text-align: justify;
 	cursor: default;
@@ -59,81 +49,8 @@ text {
 
 .location {
 	color: #676769;
-	font-size: 1.5vw;
+	font-size: 80%;
 	font-style: italic;
-}
-
-.github_logo {
-	box-sizing: border-box;
-	height: 40px;
-	width: 40px;
-	background-image: url('sm_icons/github_logo.svg');
-}
-
-/* логотип при наведении */
-.github_logo:hover {
-  	background-image: url('sm_icons/github_back.svg');
-}
-
-a.github_link {
-	padding: 0;
-	color: black;
-	width: 40px;
-  	padding: 5px;
-}
-
-.telegram_logo {
-	box-sizing: border-box;
-	height: 40px;
-	width: 40px;
-	background-image: url('sm_icons/telegram_logo.svg');
-}
-
-.telegram_logo:hover {
-  	background-image: url('sm_icons/telegram_back.svg');
-}
-
-a.telegram_link {
-	padding: 0;
-	width: 40px;
-	color: #B94F4F;
-	padding: 5px 5px 5px 0;
-}
-
-.resume_logo {
-	box-sizing: border-box;
-	height: 40px;
-	width: 40px;
-	background-image: url('sm_icons/cv_logo.svg');
-}
-
-.resume_logo:hover {
-  	background-image: url('sm_icons/cv_back.svg');
-}
-
-a.resume_link {
-	padding: 0;
-	color: black;
-	width: 40px;
-	padding: 5px;
-}
-
-.instagram_logo {
-	box-sizing: border-box;
-	height: 40px;
-	width: 40px;
-	background-image: url('sm_icons/instagram_logo.svg');
-}
-
-.instagram_logo:hover {
-  	background-image: url('sm_icons/instagram_back.svg');
-}
-
-a.instagram_link {
-	padding: 0;
-	color: #B94F4F;
-	width: 40px;
-	padding: 5px;
 }
 
 .thanks_text {
@@ -155,7 +72,7 @@ a.instagram_link {
 
 .interactive_svg {
 	padding-top: 0;
-	width: 40%;
+	height: 100%;
 	float: left;
 }
 
@@ -186,7 +103,7 @@ a.instagram_link {
 .interactive_svg2 {
 	padding-top: 0;
 	float: right;
-	width: 40%;
+	width: 100%;
 }
 
 .text_for_svg2 {

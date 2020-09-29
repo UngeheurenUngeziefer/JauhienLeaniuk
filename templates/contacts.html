@@ -1,5 +1,38 @@
 {% include 'header.html' %}
 <body>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/black_box.css') }}" />
-  <div class='black_block'><div class='bb_text'>Contacts<img src="static/bb_icons/contacts_icon.svg" class='bb_icon' /></div></div>
+	<!-- Масштабирование по ширине экрана -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/black_box.css') }}" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/coding.css') }}" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}" />
+	<div class='black_block'>
+		<div class='bb_text'>Contacts<img src="static/bb_icons/contacts_icon.svg" class='bb_icon' /></div>
+	</div>
+
+	<div class='project_block'>
+        <div class='project_name'>
+            <text class='name_text'>Jaŭhien 
+            	<b>Leaniuk</b>
+            </text><br />
+            Teacher<br/>Entrepreneur<br/>Python Developer<br/>Author<br />
+            <text class='location'>Janaŭ, Belarus</text>
+        </div>
+        <div class='project_description'>
+        <!-- Фото -->
+		<img src="{{ 'static/contacts/contacts.png' }}" alt="my photo" class='leftimg' />
+			<!-- Текст портфолио -->
+			<text class='portfolio_text'>
+				To contact me, you can write at any address shown on the right. I am always open to new projects and full-time work. Especially in Python development.
+			</text>
+        </div>
+        <div class='date'>
+            	<a class='coding_link' target='_blank' href='https://t.me/jhnlnk'>Telegram</a><br />
+            	<a class='coding_link' target='_blank' href='https://www.instagram.com/python_subjugation'>Instagram</a><br />
+            	<a class='coding_link' target='_blank' href="mailto:jauhien.leaniuk@gmail.com">GMail</a><br />
+	    </div>
+	    <div class='horizontal_space'></div>
+	</div>
+	<div class='footer'>
+        {% include 'footer.html' %}
+    </div>
 </body>

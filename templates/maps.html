@@ -1,13 +1,15 @@
 {% include 'header.html' %}
 <body>
 	<!-- Масштабирование по ширине экрана -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
     <!-- Подгрузка стилей -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/black_box.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/maps.css') }}" />
     <!-- Надпись в чёрном боксе -->
-	<div class='black_block'><div class='bb_text'>Maps<img src="static/bb_icons/maps_icon.svg" class='bb_icon' /></div></div>
+	<div class='black_block'>
+		<div class='bb_text'>Maps<img src="static/bb_icons/maps_icon.svg" class='bb_icon' /></div>
+	</div>
 	<!-- Слайдшоу карт -->    
 	<div class="slideshow-container">
 		<!-- Блок карты -->
@@ -292,6 +294,7 @@
 
 		<a class="prev" onclick="plusSlides(-1)">❮</a>
 		<a class="next" onclick="plusSlides(1)">❯</a>
+		</div>
 	</div>
 	<br>
 	<div style="text-align:center">

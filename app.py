@@ -1,5 +1,14 @@
-from flask import Flask, url_for, render_template
+from flask import Flask, url_for, render_template, request
+from flask_babel import Babel, gettext
+
 app = Flask(__name__)
+app.config['BABEL_DEFAULT_LOCALE'] ='en'
+babel = Babel(app)
+
+@babel.localeselector
+def get_locale():
+    return 'en'
+    #request.accept_languages.best.best_match(['en', 'by', 'ru'])
 
 @app.route('/')
 def home(name=None):

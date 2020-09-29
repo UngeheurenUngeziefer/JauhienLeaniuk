@@ -1,5 +1,95 @@
 {% include 'header.html' %}
 <body>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/black_box.css') }}" />
-  <div class='black_block'><div class='bb_text'>Running<img src="static/bb_icons/running_icon.svg" class='bb_icon' /></div></div>
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/black_box.css') }}" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/running.css') }}" />
+	<div class='black_block'>
+		<div class='bb_text'>Running<img src="static/bb_icons/running_icon.svg" class='bb_icon' /></div>
+	</div>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/coding.css') }}" />
+	<div class='title_projects'>My stats</div>
+
+    <div class='project_block'>
+        <div class='project_name'>
+            <div class='running_title'>Start Time</div>
+        </div>
+        <div class='project_description'>My running statistic stored in adidas runtastic app. So I exported my data from 25 september 2019 to 25 september 2020 and make few visualisations of my stats using PyGal and Pandas. Start time of my trainings primary in evening zone, but there are some trainings in the morning because my night work at the time.</div>
+        <div class='date'>25 sep 2019<br />25 sep 2020</div>
+        <div class='horizontal_space'></div>
+    </div>
+	<object type="image/svg+xml" data="{{ 'static/running/start_time_running.svg' }}" class='running_svg'></object>
+	<div class='horizontal_space'></div>
+
+	<div class='project_block'>
+        <div class='project_name'>
+            <div class='running_title'>Distance</div>
+        </div>
+        <div class='project_description'>Here You may see the goal of 20km achieved. And the median distance about 5km.</div>
+        <div class='horizontal_space'></div>
+    </div>
+	<object type="image/svg+xml" data="{{ 'static/running/distance_running.svg' }}" class='running_svg'></object>
+	<div class='horizontal_space'></div>
+
+	<div class='project_block'>
+        <div class='project_name'>
+            <div class='running_title'>Speed</div>
+        </div>
+        <div class='project_description'>At the average speed visualisation we may see the increase of speed by the time.</div>
+        <div class='horizontal_space'></div>
+    </div>
+	<object type="image/svg+xml" data="{{ 'static/running/average_speed.svg' }}" class='running_svg'></object>
+	<div class='horizontal_space'></div>
+
+	<div class='project_block'>
+		<div class='project_name'>
+            <div class='running_title'>Speed</div>
+        </div>
+        <div class='project_description'>Here the same increasing of the maximum speed of trainigs.</div>
+        <div class='horizontal_space'></div>
+    </div>
+	<object type="image/svg+xml" data="{{ 'static/running/max_speed.svg' }}" class='running_svg'></object>
+	<div class='horizontal_space'></div>
+
+	<div class='project_block'>
+        <div class='project_name'>
+            <div class='running_title'>Duration</div>
+        </div>
+        <div class='project_description'>Duration visualisation shown the median time about 15-25 minutes.</div>
+        <div class='horizontal_space'></div>
+    </div>
+	<object type="image/svg+xml" data="{{ 'static/running/duration_running.svg' }}" class='running_svg'></object>
+	<div class='horizontal_space'></div>
+
+	<div class='project_block'>
+        <div class='project_name'>
+            <div class='running_title'>Step Frequency</div>
+        </div>
+        <div class='project_description'>Step Frequency is important value in running, there are You may see the increase of the average step frequency.</div>
+        <div class='horizontal_space'></div>
+    </div>
+	<object type="image/svg+xml" data="{{ 'static/running/avg_step_frequency.svg' }}" class='running_svg'></object>
+	<div class='horizontal_space'></div>
+
+	<div class='project_block'>
+        <div class='project_name'>
+            <div class='running_title'>Elevation</div>
+        </div>
+        <div class='project_description'>Visualisation show not high changes in elevations of runnings. All elevations is under 100 m.</div>
+        <div class='horizontal_space'></div>
+    </div>
+	<object type="image/svg+xml" data="{{ 'static/running/gain_loss.svg' }}" class='running_svg'></object>
+	<div class='horizontal_space'></div>
+
+	<div class='project_block'>
+        <div class='project_name'>
+            <div class='running_title'>Total stats</div>
+        </div>
+        <div class='project_description'>There interesting total stats.</div>
+        <div class='horizontal_space'></div>
+    </div>
+	<object type="image/svg+xml" data="{{ 'static/running/calories_steps.svg' }}" class='running_svg'></object>
+
+	<div class='footer'>
+        {% include 'footer.html' %}
+    </div>
 </body>
