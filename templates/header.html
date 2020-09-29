@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
+	
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.1">
-    <title>Jauhien.Leaniuk</title>
+    <title>
+    	Jauhien.Leaniuk
+    </title>
+
     <link rel="icon" href="{{ 'static/css/logo/main_icon.svg' }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}" />
 	    <a class="logolink" href="{{ url_for('home') }}"><div class='logo'></div></a>
        	    <div class="dropdown">
-			  <button href="{{ url_for('home') }}" class="dropbtn">EN</button>
+			  <button class="dropbtn">EN</button>
 			  <div class="dropdown-content">
-		    	<a class='header_link' href="#">RU</a>
-		    	<a class='header_link' href="#">BY</a>
+		    	<a class='header_link' href="{{ url_for('home') }}">BY</a>
+		    	<a class='header_link' href="{{ url_for('home') }}">RU</a>
  		  	  </div>
 			</div>
 	    <div class="scrollmenu">
-	        <a class='header_link' href='{{ url_for("home") }}'>Home</a>
+			<a class='header_link' href='{{ url_for("home") }}'>Home</a>
 	        <a class='header_link' href='{{ url_for("coding") }}'>Coding</a>
 	        <a class='header_link' href='{{ url_for("maps") }}'>Maps</a>
 	        <a class='header_link' href='{{ url_for("running") }}'>Running</a>

@@ -1,0 +1,4 @@
+pybabel extract -F babel.cfg -o messages.pot .
+pybabel init -i messages.pot -d translations -l LANG
+translate and save
+pybabel compile -d translations

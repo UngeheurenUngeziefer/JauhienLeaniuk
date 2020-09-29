@@ -12,8 +12,8 @@
 
 	<div class='project_block'>
         <div class='project_name'>
-            <text class='name_text'>Jaŭhien 
-            	<b>Leaniuk</b>
+            <text class='name_text'>{{ jauhien }} 
+            	<b>{{ _('Leaniuk') }}</b>
             </text><br />
             Teacher<br/>Entrepreneur<br/>Python Developer<br/>Author<br />
             <text class='location'>Janaŭ, Belarus</text>
@@ -41,6 +41,9 @@
         </div>
         <div class='project_description'>
         	<object type="image/svg+xml" data="{{ 'static/home/my_projects_stats.svg' }}" class='interactive_svg'></object>
+        </div>
+        <div class='date'>
+            Date: {{ format_dates['date'] }} <br />
         </div>
 	    <div class='horizontal_space'></div>
 	</div>
