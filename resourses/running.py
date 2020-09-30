@@ -3,7 +3,6 @@ import glob
 import os
 import pygal
 from pygal.style import Style
-import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 
 # Открываем все json файлы и делаем из них один

@@ -5,25 +5,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.1">
     <title>
-    	Jauhien.Leaniuk
+    	{{ _('Jaŭhien.Leaniuk') }}
     </title>
 
     <link rel="icon" href="{{ 'static/css/logo/main_icon.svg' }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}" />
 	    <a class="logolink" href="{{ url_for('home') }}"><div class='logo'></div></a>
-       	    <div class="dropdown">
-			  <button class="dropbtn">EN</button>
-			  <div class="dropdown-content">
-		    	<a class='header_link' href="{{ url_for('home') }}">BY</a>
-		    	<a class='header_link' href="{{ url_for('home') }}">RU</a>
- 		  	  </div>
-			</div>
+			{% if CURRENT_LANGUAGE == 'BE' %}
+				<div class="dropdown">
+					<button class="dropbtn">BE</button>
+					<div class="dropdown-content">
+				    	<a class='header_link' href="{{ url_for('set_language', language='EN') }}">EN</a>
+				    	<a class='header_link' href="{{ url_for('set_language', language='RU') }}">RU</a>
+	 		  	  </div>
+				</div>
+			{% elif CURRENT_LANGUAGE == 'RU' %}
+				<div class="dropdown">
+					<button class="dropbtn">RU</button>
+					<div class="dropdown-content">
+				    	<a class='header_link' href="{{ url_for('set_language', language='BE') }}">BE</a>
+				    	<a class='header_link' href="{{ url_for('set_language', language='EN') }}">EN</a>
+	 		  	  </div>
+				</div>
+			{% else %}
+	       	    <div class="dropdown">
+					<button class="dropbtn">EN</button>
+					<div class="dropdown-content">
+				    	<a class='header_link' href="{{ url_for('set_language', language='BE') }}">BE</a>
+				    	<a class='header_link' href="{{ url_for('set_language', language='RU') }}">RU</a>
+	 		  	  	</div>
+				</div>
+			{% endif %}
+
+		
+
+
 	    <div class="scrollmenu">
-			<a class='header_link' href='{{ url_for("home") }}'>Home</a>
-	        <a class='header_link' href='{{ url_for("coding") }}'>Coding</a>
-	        <a class='header_link' href='{{ url_for("maps") }}'>Maps</a>
-	        <a class='header_link' href='{{ url_for("running") }}'>Running</a>
-	        <a class='header_link' href='{{ url_for("contacts") }}'>Contacts</a>
+			<a class='header_link' href='{{ url_for("home") }}'>{{ _('Home') }}</a>
+	        <a class='header_link' href='{{ url_for("coding") }}'>{{ _('Coding') }}</a>
+	        <a class='header_link' href='{{ url_for("maps") }}'>{{ _('Maps') }}</a>
+	        <a class='header_link' href='{{ url_for("running") }}'>{{ _('Running') }}</a>
+	        <a class='header_link' href='{{ url_for("contacts") }}'>{{ _('Contacts') }}</a>
 		</div>
   </head>
 </html>

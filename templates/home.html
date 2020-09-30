@@ -7,22 +7,22 @@
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}" />
 	<!-- Чёрная полоса -->
 	<div class='black_block'>
-		<div class='bb_text'>Home<img src="static/bb_icons/home_icon.svg" class='bb_icon' /></div>
+		<div class='bb_text'>{{ _('Home') }}<img src="static/bb_icons/home_icon.svg" class='bb_icon' /></div>
 	</div>
 
 	<div class='project_block'>
         <div class='project_name'>
-            <text class='name_text'>{{ jauhien }} 
+            <text class='name_text'>{{ _('Jaŭhien') }} 
             	<b>{{ _('Leaniuk') }}</b>
             </text><br />
-            Teacher<br/>Entrepreneur<br/>Python Developer<br/>Author<br />
-            <text class='location'>Janaŭ, Belarus</text>
+            {{ _('Teacher') }}<br/>{{ _('Entrepreneur') }}<br/>{{ _('Python Developer') }}<br/>{{ _('Author') }}<br />
+            <text class='location'>{{ _('Janaŭ, Belarus') }}</text>
         </div>
         <div class='project_description'>
         	<img src="{{ 'static/home/photo.png' }}" alt="my photo" class='leftimg' />
 			<!-- Текст портфолио -->
-			<text class='portfolio_text'>Hi there! My name is Jauhien Leaniuk. I'm master of geography and junior python developer from Belarus. This is a portfolio-website created to show my skills, and also to present myself as a web-developer, and to show my own projects and hobbies. I have a passion in learning new programming technologies, geography, philosophy, running, self development and creation new things. I worked as a author, teacher (of geography), freelancer (mostly as a designer and animator) and analyst. As I develop my programming skills I will be sharing all my projects on this site (in coding section). Also this site will contain my other passions: maps that I've created as a geographer and <a class='coding_link' href='http://the-dialogue.com/' target='_blank'>The Dialogue</a> author and my running statistic.
-			<i class='thanks_text'><br />Thanks for Your attention!</i>
+			<text class='portfolio_text'>{{ _("Hi there! My name is Jaŭhien Leaniuk. I'm master of geography and junior python developer from Belarus. This is a portfolio-website created to show my skills, and also to present myself as a web-developer, and to show my own projects and hobbies. I have a passion in learning new programming technologies, geography, philosophy, running, self development and creation new things. I worked as a author, teacher (of geography), freelancer (mostly as a designer and animator) and analyst. As I develop my programming skills I will be sharing all my projects on this site (in coding section). Also this site will contain my other passions: maps that I've created as a geographer and ") }}<a class='coding_link' href='http://the-dialogue.com/' target='_blank'>The Dialogue</a> {{ _('author and my running statistic') }}.
+			<i class='thanks_text'><br />{{ _('Thanks for Your attention!') }}</i>
 			</text>
         </div>
         <div class='date'>
@@ -36,21 +36,21 @@
 
 	<div class='project_block'>
         <div class='project_name'>
-            <text class='name_text'><b>Tech's</b> and <b>Spheres</b></text><br />
-            used in my projects
+            <text class='name_text'><b>{{ _("Tech's") }}</b> {{ _('and') }} <b>{{ _('Spheres') }}</b></text><br />
+            {{ _('used in my projects') }}
         </div>
         <div class='project_description'>
         	<object type="image/svg+xml" data="{{ 'static/home/my_projects_stats.svg' }}" class='interactive_svg'></object>
         </div>
         <div class='date'>
-            Date: {{ format_dates['date'] }} <br />
+            {{ _('September 2020') }} <br />
         </div>
 	    <div class='horizontal_space'></div>
 	</div>
 
 	<div class='project_block'>
         <div class='project_name'>
-            <text class='name_text'>My<b> Skills</b></text><br />
+            <text class='name_text'>{{ _('My') }}<b> {{ _('Skills') }}</b></text><br />
         </div>
         <div class='project_description'>
         	<object type="image/svg+xml" data="{{ 'static/home/my_skills.svg' }}" class='interactive_svg'></object>
@@ -60,7 +60,7 @@
 
 	<div class='project_block'>
         <div class='project_name'>
-            <text class='name_text'>My<b> Expirience</b></text><br />
+            <text class='name_text'>{{ _('My') }}<b> {{ _('Expirience') }}</b></text><br />
         </div>
         <div class='project_description'>
         	<object type="image/svg+xml" data="{{ 'static/home/my_expirience.svg' }}" class='interactive_svg'></object>

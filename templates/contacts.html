@@ -6,23 +6,23 @@
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/coding.css') }}" />
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}" />
 	<div class='black_block'>
-		<div class='bb_text'>Contacts<img src="static/bb_icons/contacts_icon.svg" class='bb_icon' /></div>
+		<div class='bb_text'>{{ _('Contacts') }}<img src="static/bb_icons/contacts_icon.svg" class='bb_icon' /></div>
 	</div>
 
 	<div class='project_block'>
         <div class='project_name'>
-            <text class='name_text'>Jaŭhien 
-            	<b>Leaniuk</b>
+            <text class='name_text'>{{ _('Jaŭhien') }} 
+            	<b>{{ _('Leaniuk') }}</b>
             </text><br />
-            Teacher<br/>Entrepreneur<br/>Python Developer<br/>Author<br />
-            <text class='location'>Janaŭ, Belarus</text>
+            {{ _('Teacher') }}<br/>{{ _('Entrepreneur') }}<br/>{{ _('Python Developer') }}<br/>{{ _('Author') }}<br />
+            <text class='location'>{{ _('Janaŭ, Belarus') }}</text>
         </div>
         <div class='project_description'>
         <!-- Фото -->
 		<img src="{{ 'static/contacts/contacts.png' }}" alt="my photo" class='leftimg' />
 			<!-- Текст портфолио -->
 			<text class='portfolio_text'>
-				To contact me, you can write at any address shown on the right. I am always open to new projects and full-time work. Especially in Python development.
+				{{ _('To contact me, you can write at any address shown on the right. I am always open to new projects and full-time work. Especially in Python development.') }}
 			</text>
         </div>
         <div class='date'>

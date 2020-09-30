@@ -1,10 +1,10 @@
 <!-- Файл стилей -->
 <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}" />
 	<div class='footer_text'>
-		<div class='footer_text_top'>Site created using this tech's and products:</div>
+		<div class='footer_text_top'>{{ _("Site created using this tech's and products:") }}</div>
 	</div>
 	<img src="{{ 'static/footer/footer_icons.svg' }}" class='footer_icons'></img>
 	<div class='footer_text'><div class='footer_text_bottom'>© 2020	Jaŭhien Leaniuk, 
 		<img src="{{ 'static/css/logo/main_icon.svg' }}" class='main_icon'></img>
-		 some rights reserved.</div>
+		 <a class='footer_link' target='_blank' href="http://creativecommons.org/licenses/by-sa/3.0/us/">{{ _('some rights reserved.') }}</a></div>
 	</div>
