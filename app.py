@@ -11,7 +11,7 @@ app.config['LANGUAGES'] =  {
     'ru': 'RU',
 }
 
-app.secret_key = "super secret key"
+app.secret_key = "C.t78$qKp3JJWzh!!:*Z^)XTwAmH$Q"
 # app.config.from_pyfile('mysettings.cfg')
 babel = Babel(app)
 
@@ -132,4 +132,4 @@ with app.test_request_context():
     url_for('static', filename='home.css')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)

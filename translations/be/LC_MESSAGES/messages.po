@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-09-29 23:02+0300\n"
-"PO-Revision-Date: 2020-09-29 23:04+0300\n"
+"POT-Creation-Date: 2020-09-30 22:03+0300\n"
+"PO-Revision-Date: 2020-09-30 22:04+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: be\n"
 "Language-Team: be <LL@li.org>\n"
@@ -19,11 +19,610 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: app.py:19
+#: templates/coding.html:11 templates/header.html:45
+msgid "Coding"
+msgstr "Праграміраванне"
+
+#: templates/coding.html:16
+msgid "My projects"
+msgstr "Маі праекты"
+
+#: templates/coding.html:20
+msgid "Jaŭhien Leaniuk"
+msgstr "Яўген Леанюк"
+
+#: templates/coding.html:23
+msgid ""
+"Web development is something very popular in tech sphere, so I choose "
+"create this site portfolio using programs that I'm very familiar with "
+"such as"
+msgstr ""
+"Вэб распрацоўка вельмі папулярная ў сферы IT апошні час, таму я вырашыў "
+"стварыць свой сайт партфоліо з выкарыстаннем праграм з якімі я найбольш добра знаёмы "
+"такіми як"
+
+#: templates/coding.html:23
+msgid "(all images, backs, colors, icons, design),"
+msgstr "(усе малюнкі, фоны, колеры, іконкі, дызайн)"
+
+#: templates/coding.html:23
+msgid "(to operate with Python and GitHub) and few technologies and frameworks: "
+msgstr "(каб працаваць з Python і GitHub) і некаторыя тэхналогіі і фрэймворкі: "
+
+#: templates/coding.html:23
+msgid "(web-framework, backend of this site),"
+msgstr "(веб-фрэймворкі, бэкэнд сайта),"
+
+#: templates/coding.html:23
+msgid "(blocks and markup of the site),"
+msgstr "(блёкі ды маркіроўка сайту),"
+
+#: templates/coding.html:23
+msgid "(styles of html-blocks, effects of header),"
+msgstr "(стылі html-блёкаў, эфекты шапкі),"
+
+#: templates/coding.html:23
+msgid "(map section selector),"
+msgstr "(прагляд мапаў),"
+
+#: templates/coding.html:23
+msgid "(language selector logic and so on),"
+msgstr "(логіка выбару мовы і гэтак далей),"
+
+#: templates/coding.html:23
+msgid "(text translations logic and locale's auto selector),"
+msgstr "(логіка перакладу тэксту і аўта выбар перакладу),"
+
+#: templates/coding.html:23
+msgid "(all interactive SVG charts),"
+msgstr "(усе інтэрактыўныя SVG графікі),"
+
+#: templates/coding.html:23
+msgid "(all calculations for charts),"
+msgstr "(усе вылічэння для графікаў)"
+
+#: templates/coding.html:23
+msgid "(format of data from my running app)."
+msgstr "(фармат інфармацыі з бегавой праграмы)."
+
+#: templates/coding.html:30
+msgid "Alien Invasion"
+msgstr "Alien Invasion"
+
+#: templates/coding.html:32
+msgid "I choose to read the book "
+msgstr "Я выбраў прачытаць кнігу "
+
+#: templates/coding.html:32
+msgid "Python Crash Course"
+msgstr "Python Crash Course"
+
+#: templates/coding.html:32
+msgid ""
+"by Eric Matthes, so one of the proposed projects in this book is \"Alien "
+"Invasion\" project"
+msgstr ""
+"Эрыка Мэтьюза, адным з прапанаваных праектаў у гэтай кнізе з'яўляецца гульня \"Alien "
+"Invasion\""
+
+#: templates/coding.html:32
+msgid ""
+", so there I'm finished it. With few self improvements like two guns "
+"instead of one and others."
+msgstr ""
+", на гэтым этапе я яе завяршыў. З некалькімі фічамі як дзьве пушкі "
+"замест адной і іншымі."
+
+#: templates/coding.html:43
+msgid ""
+"This game is written very fast, but there is no some hard logic or many "
+"lines of code. The main goal to avoid bad drops and collect good. So this"
+" time I try to create more pure graphics and background changes every "
+"level."
+msgstr ""
+"Гэтая гульня напісана вельмі хутка, тут няма складанай логікі ці шмат "
+"строк кода. Галоўная мэта гульні пазбегнуць дрэнныя кроплі і збіраць добрыя. У"
+" гэты раз я паспрабаваў стварыць больш чыстую графіку, таксама дадана змяненне фону кожны "
+"узровень."
+
+#: templates/coding.html:54
+msgid ""
+"One of my favorite games from NES is Road Fighter. So I choose to make my"
+" version of this game using"
+msgstr ""
+"Адна з маіх любімых гульнь на NES гэта Road Fighter. Таму я выбраў стварыць сваю"
+" версію гэтай гульні з выкарыстоўваннем"
+
+#: templates/coding.html:54
+msgid ""
+"engine. I making this one little bit long, cause I'm carried away and "
+"create 3 lvl's, few final screens, few enemies and so on. But I think the"
+" project is great :)"
+msgstr ""
+"двіжка. Я рабіў гэтую гульню некалькі доўга, таму што я пагрузіўся ў яе і "
+"зрабіў цэлых 3 узроўні, некалькі фінальных экранаў, некалькі ворагаў і гэтак далей. Думаю"
+" што праект круты :)"
+
+#: templates/coding.html:65
+msgid ""
+"I think that except calculator, every programmer should know how to "
+"programm snake game. So I do the snake using"
+msgstr ""
+"Я лічу што акрамя калькулятара, кожны праграміст павінен ведаць як "
+"зрабіць сваю змейку. Што ж я яе і зрабіў з дапамогай"
+
+#: templates/coding.html:76
+msgid "Here I'm learn"
+msgstr "Тут я вывучыў"
+
+#: templates/coding.html:76
+msgid ""
+"framework, which created to make games with pyxel-bit graphics. My first "
+"game used this engine is based on one of game examples in framework "
+"files, and the main goal of the game is to avoid the bullets and collect "
+"geometric shapes."
+msgstr ""
+"фрэймворк, які створаны каб рабіць гульні ў піксельнай графіцы. Мая першая "
+"гульня выкарыстоўваючая гэты двіжок заснавана на адной з гульнь прыкладаў у бібліятке "
+", галоўная задача гульні пазбегнуць куль і збіраць "
+"сяброўскія постаці."
+
+#: templates/coding.html:87
+msgid "Some time later I write a "
+msgstr "Некаторы час пазней я напісаў "
+
+#: templates/coding.html:87
+msgid "test bot"
+msgstr "тэст бота"
+
+#: templates/coding.html:87
+msgid ""
+"who send a random article link on choosen language from another my "
+"project \"The Dialogue\"."
+msgstr ""
+"які адпраўляе спасылку на выпадковы артыкул на выбранай мове з іншага майго "
+"праекта \"Дыялог\"."
+
+#: templates/coding.html:98
+msgid ""
+"Telegram is growing fast last years, so I'm interested in creation "
+"Telegram bots on Python. First of all I make web-scraper for downloading "
+"images from site "
+msgstr ""
+"Тэлеграм добра расце апошнія годы, таму я зацікавіўся стварэннем "
+"тэлеграм ботаў на Python. У пачатку я зрабіў парсер каб спампаваць "
+"відарысы з сайта "
+
+#: templates/coding.html:98
+msgid "and then create bot who post images to the"
+msgstr "далей стварыў бота які публікуе відарыс ў"
+
+#: templates/coding.html:98
+msgid "telegram channel"
+msgstr "тэлеграм канал"
+
+#: templates/coding.html:98
+msgid ""
+"as a administrator. You need to show bot link to the channel, give bot "
+"admin rights and send address of directory when images lay. So there I "
+"notice about telegram restriction for 3 sec time of posting, and make a "
+"correction."
+msgstr ""
+"як адміністратар. Вы павінны паказаць боту спасылку на канал, даць боту "
+"права адміністратара і адправіць адрэс дырэкторыі, дзе знаходзяцца малюнкі. Тут я "
+"даведаўся аб абмежаванні тэлеграма ў 3 секунды на посцінг і зрабіў адпаведнае "
+"выпраўленьне."
+
+#: templates/coding.html:109
+msgid "My first project in Data Analytics. I analyse"
+msgstr "Мой першы праект у Аналізе Дадзеных. Я прааналізаваў"
+
+#: templates/coding.html:109
+msgid ""
+"website and calculate many astronomic parameters and build graphics based"
+" on this calculations. Not all of my graphics look's very nice, but here "
+"I'm studied how to work with"
+msgstr ""
+"сайт і вылічыў шмат астранамічных паказчыкаў і пабудаваў графікі заснаваные"
+" на гэтых вылічэннях. Не усе маі графікі выглядаюць добра, але тут "
+"Я пачаў працаваць з"
+
+#: templates/coding.html:109
+msgid "and little bit of"
+msgstr "і трошкі з"
+
+#: templates/coding.html:109
+msgid "So there I first used classes and working with them."
+msgstr "Тут я ўпершыню выкарыстоўваў класы і стварыў праект з іх выкарыстаннем."
+
+#: templates/coding.html:120
+msgid ""
+"I read somewhere that every programmer should be able to write their own "
+"calculator, and I also wanted to try to make progress in creating a "
+"graphical interface, so the calculator via print in the console was a "
+"completed stage."
+msgstr ""
+"Я прачытаў недзе, што кожны праграміст павінен быць здольны напісаць свой асаблівы "
+"калькулятар, таму я вырашыў навучыцца ствараць "
+"графічны інтэрфейс, на гэтым этапе калькулятар праз кансоль быў ужо  "
+"скончаным этапам."
+
+#: templates/coding.html:131
+msgid "This time I trying to create my first website with"
+msgstr "На гэты раз я вырашыў стварцыь свой першы сайт з"
+
+#: templates/coding.html:131
+msgid "I made little sidebar with"
+msgstr "я зрабіў невяліку бакавую панель з"
+
+#: templates/coding.html:131
+msgid "and create two pages to show my skills."
+msgstr "і зрабіў две старонкі каб адлюстраваць сваі здольнасці."
+
+#: templates/coding.html:142
+msgid "My first interesting project finished after"
+msgstr "Мой першы цікавы праект завершаны пасля праходжання курса"
+
+#: templates/coding.html:142
+msgid "Coursera Python Basics"
+msgstr "Асновы праграмавання на Python"
+
+#: templates/coding.html:142
+msgid ""
+"course completed. Game based on simple if-else logic and working from "
+"console there is no GUI, but it's a first finished project writed fully "
+"by myself!"
+msgstr ""
+"Гульня заснавана на простай if-else логіке і працуе з "
+"кансолі, тут няма графічнага інтэрфейсу, але гэта першы завершаны праект напісаны цалкам "
+"самастойна!"
+
+#: templates/coding.html:153
+msgid "Little screensaver programm created with"
+msgstr "Невялікая праграма скрынсэйвер створанная з"
+
+#: templates/coding.html:164
+msgid "Just some experiments with"
+msgstr "Проста невялікія эксперымены з"
+
+#: templates/coding.html:164
+msgid "framework. There is few simple image movers by arrows and other controls."
+msgstr "Тут некалькі простых рухацелей малюнка з дапамогай стрэлак."
+
+#: templates/contacts.html:9 templates/header.html:48
+msgid "Contacts"
+msgstr "Кантакты"
+
+#: templates/contacts.html:14 templates/home.html:15
 msgid "Jaŭhien"
 msgstr "Яўген"
 
-#: templates/home.html:16
+#: templates/contacts.html:15 templates/home.html:16
 msgid "Leaniuk"
 msgstr "Леанюк"
+
+#: templates/contacts.html:17 templates/home.html:18
+msgid "Teacher"
+msgstr "Настаўнік"
+
+#: templates/contacts.html:17 templates/home.html:18
+msgid "Entrepreneur"
+msgstr "Фрылансер"
+
+#: templates/contacts.html:17 templates/home.html:18
+msgid "Python Developer"
+msgstr "Python распрацоўшчык"
+
+#: templates/contacts.html:17 templates/home.html:18
+msgid "Author"
+msgstr "Аўтар"
+
+#: templates/contacts.html:18 templates/home.html:19
+msgid "Janaŭ, Belarus"
+msgstr "Янаў, Беларусь"
+
+#: templates/contacts.html:25
+msgid ""
+"To contact me, you can write at any address shown on the right. I am "
+"always open to new projects and full-time work. Especially in Python "
+"development."
+msgstr ""
+"Каб звязацца са мной, Вы можаце напісаць на любы адрэс справа Я "
+"заўсёды адкрыты да новых праектаў а таксама любой працы. Асабліца ў сферы распрацоўкі "
+"на Python."
+
+#: templates/footer.html:4
+msgid "Site created using this tech's and products:"
+msgstr "Сайт зроблены з выкарыстаннем наступных тэхналогій і праграм:"
+
+#: templates/footer.html:9
+msgid "some rights reserved."
+msgstr "некаторыя правы абаронены."
+
+#: templates/header.html:8
+msgid "Jaŭhien.Leaniuk"
+msgstr "Яўген.Леанюк"
+
+#: templates/header.html:44 templates/home.html:10
+msgid "Home"
+msgstr "Хатняя"
+
+#: templates/header.html:46 templates/maps.html:11
+msgid "Maps"
+msgstr "Мапы"
+
+#: templates/header.html:47 templates/running.html:7
+msgid "Running"
+msgstr "Бег"
+
+#: templates/home.html:24
+msgid ""
+"Hi there! My name is Jaŭhien Leaniuk. I'm master of geography and junior "
+"python developer from Belarus. This is a portfolio-website created to "
+"show my skills, and also to present myself as a web-developer, and to "
+"show my own projects and hobbies. I have a passion in learning new "
+"programming technologies, geography, philosophy, running, self "
+"development and creation new things. I worked as a author, teacher (of "
+"geography), freelancer (mostly as a designer and animator) and analyst. "
+"As I develop my programming skills I will be sharing all my projects on "
+"this site (in coding section). Also this site will contain my other "
+"passions: maps that I've created as a geographer and "
+msgstr ""
+"Прывітанне! Мяне зваць Леанюк Яўген. Я магістр геаграфіі і джуніор "
+"Python распрацоўшчык з Беларусі. Гэта сайт-партфоліо створаны каб "
+"адлюстраваць маі магчымасці, а таксама прэзентаваць сябе як вэб-распрацоўшчыка, таксама "
+"адлюстраваць маі праекты і захапленьні. Маі галоўныя захапленьні гэта вывучэнне новых "
+"тэналогій праграмавання, геаграфія, філясофія, бег, самаразвіццё "
+"і стварэнне новага ў любой форме. Я працаваў як аўтар, настаўнік (геаграфіі "
+"), фрылансер (ў асноўным як дызайнер і мультыплікатар) і аналітык. "
+"З развіццём сваіх праграмісцкіх здольнасцей я буду дзяліцца сваімі праектамі на "
+"гэтым сайце (у секцыі праграмаванне). Таксама гэты сайт змяшчае некаторые мае іншыя "
+"захапленьні: мапы, якія я ствараў як географ і "
+
+#: templates/home.html:24
+msgid "author and my running statistic"
+msgstr "аўтар і маю бегавую статыстыку"
+
+#: templates/home.html:25
+msgid "Thanks for Your attention!"
+msgstr "Дзякуй за ўвагу!"
+
+#: templates/home.html:39
+msgid "Tech's"
+msgstr "Тэхналогіі"
+
+#: templates/home.html:39
+msgid "and"
+msgstr "і"
+
+#: templates/home.html:39
+msgid "Spheres"
+msgstr "Сферы"
+
+#: templates/home.html:40
+msgid "used in my projects"
+msgstr "выкарыстоўваючыяся ў маіх праектах"
+
+#: templates/home.html:46
+msgid "September 2020"
+msgstr "Верасень 2020"
+
+#: templates/home.html:53 
+msgid "My "
+msgstr "Маі"
+
+#: templates/home.html:53
+msgid "Skills"
+msgstr "здольнасці"
+
+# templates/home.html:63
+msgid "My"
+msgstr "Мой"
+
+#: templates/home.html:63
+msgid "Expirience"
+msgstr "Вопыт"
+
+#: templates/maps.html:22 templates/maps.html:28
+msgid "Education of European leaders"
+msgstr "Адукацыя Еўрапейскіх лідэраў"
+
+#: templates/maps.html:34 templates/maps.html:40 templates/maps.html:46
+#: templates/maps.html:52 templates/maps.html:58 templates/maps.html:64
+#: templates/maps.html:70 templates/maps.html:76 templates/maps.html:82
+#: templates/maps.html:88
+msgid "European Countries and their National Animals"
+msgstr "Еўрапейская краіны і іх нацыянальныя жывёлы"
+
+#: templates/maps.html:94
+msgid ""
+"How politics has an effect on the online encyclopedia that claims "
+"objectivity"
+msgstr ""
+"Як палітыка ўплывае на энцыклапедыю якая прэтэндуе на "
+"аб'ектыўнасць"
+
+#: templates/maps.html:100
+msgid "The lithospheric plates of our planet"
+msgstr "Літасферныя пліты нашай планеты"
+
+#: templates/maps.html:106
+msgid "The movement speed of the tectonic plates of the Earth"
+msgstr "Хуткасць руху тэктанічных пліт Зямлі"
+
+#: templates/maps.html:112
+msgid "Countries in war with ISIS"
+msgstr "Краіны ў стане вайны з ІД"
+
+#: templates/maps.html:118 templates/maps.html:124 templates/maps.html:130
+#: templates/maps.html:136 templates/maps.html:142
+msgid "Battles in 2016 aimed at fighting with ISIS"
+msgstr "Баі ў 2016 супраць ІД"
+
+#: templates/maps.html:148
+msgid "Haplogroup by origin"
+msgstr "Гаплагрупы і іх паходжанне"
+
+#: templates/maps.html:154
+msgid "Civilizations by Huntington"
+msgstr "Цывілізацыі па Хантынгтану"
+
+#: templates/maps.html:160 templates/maps.html:166 templates/maps.html:172
+#: templates/maps.html:178 templates/maps.html:184
+msgid "Heraldry of German states"
+msgstr "Геральдыка зямель Германіі"
+
+#: templates/maps.html:190 templates/maps.html:202 templates/maps.html:208
+msgid "Flags of France"
+msgstr "Сцягі Францыі"
+
+#: templates/maps.html:196
+msgid "Lion habitat"
+msgstr "Арэал пражывання ільвоў"
+
+#: templates/maps.html:214
+msgid "Types of Flags of the World"
+msgstr "Тыпы сцягаў Зямлі"
+
+#: templates/maps.html:220
+msgid "Human (7.4 billion, green) and cattle habitat (1.5 billion, lines)"
+msgstr "Арэал пражывання: людзі (7.4 мілліярды, зялёным) і каровы (1.5 мілліярды, палоскі)"
+
+#: templates/maps.html:226
+msgid "This is how Columbia approximately looked like"
+msgstr "Як прыкладна выглядае суперкантынент Калумбія"
+
+#: templates/maps.html:232
+msgid "This is how Kenorland approximately looked like."
+msgstr "Як прыкладна выглядаў суперкантынент Кенорланд"
+
+#: templates/maps.html:238
+msgid "Rodinia as seen from the South Pole"
+msgstr "Радынія з Паўднёвага Полюсу"
+
+#: templates/maps.html:244
+msgid "Pannotia from the South Pole"
+msgstr "Паннотыя з Паўднёвага Полюсу"
+
+#: templates/maps.html:250
+msgid "Pangaea"
+msgstr "Пангея"
+
+#: templates/maps.html:256
+msgid "North American Flags differentiation"
+msgstr "Паўночна-Амерыканскія сцягі"
+
+#: templates/maps.html:262
+msgid "South American Flags differentiation"
+msgstr "Паўднёва-Амерыканскія сцягі"
+
+#: templates/maps.html:268
+msgid "Oceanian Flags differentiation"
+msgstr "Акіянскія сцягі"
+
+#: templates/maps.html:274
+msgid "Asian Flags differentiation"
+msgstr "Азіятскія сцягі"
+
+#: templates/maps.html:280
+msgid "African Flags differentiation"
+msgstr "Афрыканскія сцягі"
+
+#: templates/maps.html:286
+msgid "Suicide rate"
+msgstr "Узровень самазабойств"
+
+#: templates/maps.html:292
+msgid "European flags differentiation"
+msgstr "Еўрапейскія сцягі"
+
+#: templates/running.html:10
+msgid "My stats"
+msgstr "Мая Статыстыка"
+
+#: templates/running.html:14
+msgid "Start Time"
+msgstr "Час пачатку"
+
+#: templates/running.html:16
+msgid ""
+"My running statistic stored in adidas runtastic app. So I exported my "
+"data from 25 september 2019 to 25 september 2020 and make few "
+"visualisations of my stats using PyGal and Pandas. Start time of my "
+"trainings primary in evening zone, but there are some trainings in the "
+"morning because of my night work at the time."
+msgstr ""
+"Мая бегавая статыстыка захоўваецца ў прылажэнні адыдас runtastic. Таму я экспартаваў сваі "
+"дадзеныя з 25 верасня 2019 па 25 верасня 2020 і зрабіў некалькі "
+"візуалізацый маёй статыстыкі выкарыстоўваючы PyGal і Pandas. Пачатак забегаў "
+"пераважна ў вячэрняй зоне, але ёсць некалькі трэніровак "
+"ранкам зза начной працы ў гэты час."
+
+#: templates/running.html:25
+msgid "Distance"
+msgstr "Дыстанцыя"
+
+#: templates/running.html:27
+msgid ""
+"Here You may see the goal of 20km achieved. And the median distance about"
+" 5km."
+msgstr ""
+"Тут вы можаце пагледзець на дасягненнье дыстанцыі ў 20 км. І сярэднюю дыстанцыю каля"
+" 5км."
+
+#: templates/running.html:35 templates/running.html:45
+msgid "Speed"
+msgstr "Хуткасць"
+
+#: templates/running.html:37
+msgid ""
+"At the average speed visualisation we may see the increase of speed by "
+"the time."
+msgstr ""
+"Візуалізацыя сярэдняй хуткасці. Тут можна убачыць невялікае павелічэнне сярэдняй хуткасьці "
+"з часам."
+
+#: templates/running.html:47
+msgid "Here the same increasing of the maximum speed of trainigs."
+msgstr "Тут таксама павелічэнне максімальнай хуткасці."
+
+#: templates/running.html:55
+msgid "Duration"
+msgstr "Хуткасць"
+
+#: templates/running.html:57
+msgid "Duration visualisation shown the median time about 15-25 minutes."
+msgstr "Працягласць адлюстроўвае сярэдні час у 15-25 хвілін."
+
+#: templates/running.html:65
+msgid "Step Frequency"
+msgstr "Частата крокаў"
+
+#: templates/running.html:67
+msgid ""
+"Step Frequency is important value in running, there are You may see the "
+"increase of the average step frequency."
+msgstr ""
+"Частата крокаў гэта вельмі важны паказнік у беге, тут таксама магчыма пагледзець "
+"павелічэнне сярэдняй частаты крокаў."
+
+#: templates/running.html:75
+msgid "Elevation"
+msgstr "Набор вышыні"
+
+#: templates/running.html:77
+msgid ""
+"Visualisation show not high changes in elevations of runnings. All "
+"elevations is under 100 m."
+msgstr ""
+"Графік адлюстроўвае невялікія змены вышынь. Усе "
+"паказнікі ніжэй 100 метраў."
+
+#: templates/running.html:85
+msgid "Total stats"
+msgstr "Агульная статыстыка"
+
+#: templates/running.html:87
+msgid "There interesting total stats."
+msgstr "Яшчэ некалькі цікавых паказнікаў."
 
