@@ -15,7 +15,7 @@ body {
 	padding-left: 15px;
 	color: #333;
 	font-size: 70pt;
-	font-family: Bebas Neue Cyrillic;
+	font-family: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 	font-weight: bold;
 	cursor: default;
 }
